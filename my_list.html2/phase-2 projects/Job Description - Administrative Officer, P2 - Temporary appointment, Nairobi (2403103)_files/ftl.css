@@ -1,0 +1,86 @@
+/***********ftlspecific***********/
+.ftlblankrow {
+	height: 5px;
+}
+
+.interfacecallout {
+	display: none;
+}
+
+.ftldrawer {
+	vertical-align: top;
+}
+
+.ftldrawerContent {
+	vertical-align: top;
+}
+
+.ftlconfirm {
+	display: none;
+}
+
+.ftlmulti {
+	
+}
+
+.ftlgroup {
+	
+}
+
+.ftlrow {
+	
+}
+
+.ftlsuggestdiv {
+	text-align: left;
+	vertical-align: text-top;
+	color: black;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	display: block;
+	background: #ffffff;
+	padding: 4px;
+	border: 1px solid black;
+	position: absolute;
+	visibility: hidden;
+	z-index: 10000;
+	width: 300px;
+}
+
+.ftlsuggestdivelement {
+	text-align: left;
+	vertical-align: text-top;
+	color: black;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display: block;
+	cursor: pointer;
+	padding: 3px 0px 3px 0px;
+	border-bottom: 1px solid #777777;
+}
+
+.ftlboxfloat {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 199px;
+	height: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.ftlboxfloatcontainer {
+/*	visibility: hidden;*/
+	display: block;
+	width:100%;
+}
+
+.searchLookuptext {
+	white-space: normal;
+	/* 	TT129428 setting focus */
+    behavior:expression((this.runtimeStyle.behavior="none")&&(this.tabIndex="-1")); 
+}
+
+.searchLookup {
+	white-space: nowrap;
+	/* 	TT129428 setting focus */
+    behavior:expression((this.runtimeStyle.behavior="none")&&(this.tabIndex="-1")); 
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0070)https://careers.who.int/careersection/2023PRD.4.0.28.3.0/html/ajax.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Ajax FTL Proxy</title>
+<script type="text/javascript">
+function pushDataToParent() 
+{ 
+    var responseContainer = document.getElementById('response'); 
+    var response = responseContainer.innerHTML; 
+    if (response == '') 
+    { 
+        response = null; 
+    } 
+    try
+    {
+    
+		if (response == null)
+		{
+			//tt117496: PATCH for support the back-Button of browser 
+			//tt130201: PATCH for support the back-Button of browser for all ftl List 
+			if (parent.ftlUtil_getInitialHistoryData)
+			{
+				//tt117496: PATCH for support the back-Button of browser 
+				var repTmp = parent.ftlUtil_getInitialHistoryData();
+				if (repTmp  != undefined && repTmp != null && repTmp != '')
+				{
+					response = repTmp;
+					responseContainer.innerHTML = response;
+				}
+			}
+		}
+
+		//tt117496: PATCH for support the back-Button of browser 
+		if (response != null)
+		{
+	    	parent.ftlUtil_ajaxResponseReady(response);
+		}
+    }
+    catch(e)
+    {
+    	// Nothing to do
+    } 
+}
+</script>
+</head>
+<body onload="javascript:pushDataToParent();">
+<!-- Section 508 Compliance for Cynthia Says Tool -->
+Empty frame. Ignore.
+<table><tbody><tr><td id="response"></td></tr></tbody></table>
+<form action="https://careers.who.int/careersection/2023PRD.4.0.28.3.0/html/ajax.htm" method="post">
+</form>
+
+
+</body></html>

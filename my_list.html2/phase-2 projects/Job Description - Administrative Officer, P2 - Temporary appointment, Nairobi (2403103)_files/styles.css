@@ -1,0 +1,4164 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
+/**************************************************/
+/* general styling */
+/**************************************************/
+
+html {
+    background: #f5f5f5;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px !important;
+    background: #f5f5f5;
+    color: #555;
+    font-family: Helvetica, Arial, sans-serif;
+    min-height: 560px;
+}
+
+/* set link color here (default is blue) */
+a:link, a:visited {
+    color: #008dc9;
+    text-decoration: none;
+}
+
+/* set link hover color here (default is brown) */
+a:hover, a:active {
+    color: #008dc9;
+    text-decoration: underline;
+}
+
+img {
+    border: 0px;
+}
+
+#container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px; /* set width of container here */
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+
+#container #content {
+    display: inline;
+    float: left;
+    width: 1024px; /* set width of container content here */
+    background: #008bcb;
+}
+
+#content .content_body {
+    margin-bottom: 45px;
+    padding: 120px 0 0 0;
+    min-height: 435px;
+    background: url("../images/Logo.png") no-repeat #fff;
+    background-position: top 20px center;
+}
+
+.mainsection {
+    margin: 0 30px;
+    /*display: block;*/ /*Commented to fix Authentication Popup issue*/
+}
+
+/*Added to fix Authentication Popup format - Start*/
+.mainsection .squared-border-linkedin{
+	margin-top: 15px;
+}
+/*Added to fix Authentication Popup format - End*/
+
+/*Added to fix Page Alignment - Start*/
+/*
+#dialogTemplate-dialogForm-masterbody .block-main-border-fix,
+#dialogTemplate-dialogForm-masterbody .page-header,
+#dialogTemplate-dialogForm-masterbody .entity-mandatory-field,
+#dialogTemplate-dialogForm-masterbody .hidden-audible,
+#dialogTemplate-dialogForm-masterbody .dialog-table,
+#dialogTemplate-dialogForm\:login\:main-layout-table,*/
+#et-ef-content-ftf-footeraction .footeractionpanel,
+#et-ef-content-flowTemplate-mastercontentpanel2,
+.mainsection .headerpanel,
+.mainsection .mastercontentpanel,
+#dialogTemplate-dialogForm-masterbody > span{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+/*Added to fix Page Alignment - End*/
+
+.mainsection .mainsection {
+    margin: 0;
+}
+
+#facetedSearchBody .mainsection {
+    margin: 0 !important;
+}
+
+.processesTaskMainDiv .mainsection {
+    margin: 0 !important;
+}
+
+.mainsection .columnfull{
+	width: 70%;
+	padding-right: 30px;
+	border-right: 1px solid #e1e1e1;
+}
+
+.mainsection .columnfull:only-child {
+	width: 100%;
+	padding-right: 0;
+	border-right: 0;
+}
+
+.mainsection .columnfull .title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* header section */
+.mainsection .headerpanel {
+    background-color: #fff;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+a.toggle-button-header.username-button{
+    color:#fff;
+}
+
+/* this width adjusts the user header and footer information (User, you are signed in.) */
+.headersection .headerpanel .leftpanel,
+.footeraction .footeractionpanel .leftpanel {
+    float: left;
+    width: 964px; /* set width of header here */
+}
+
+.headersection {
+    width: 100%;
+}
+
+.headersection .headerpanel {
+
+}
+
+.headersection .link2panel {
+    float: left;
+    width: 100%; /* set width of header section border */
+    display: block;
+    z-index: 1;
+    margin-top: -1px;
+    border-bottom: 1px solid #008dc9;
+    -webkit-border-radius: 0 3px 3px 3px;
+    -moz-border-radius: 0 3px 3px 3px;
+    border-radius: 0 3px 3px 3px;
+}
+
+/* content section */
+.mainsection .mastercontentpanel, .mainsection .mastercontentpanel2 {
+    border:none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 20px;
+}
+.mainsection .mastercontentpanel .columnfull h1.no-change-header{
+	margin-top: 0;
+}
+.mainsection .mastercontentpanel .columnfull .fs-508 .fs-508-block input:checked + span{
+	font-weight: 700;
+}
+.mainsection .mastercontentpanel .column165 .helppanel {
+	border:none;
+	width: 90%;
+}
+.mainsection .mastercontentpanel .column165 .helppanel .blockhelppanel{
+	margin-left: 14px;
+	margin-top: -25px;
+}
+.mainsection .mastercontentpanel .column165 .helppanel .blockhelppanel h3 .helptitle{
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+
+/* content left pane */
+.mainsection .blockpanel {
+    display: block;
+    max-width: 665px; /* set width of left pane (such as personal info) */
+}
+
+.mainsection .mastercontentpanel .blockpanel { /* login screen disclaimer width */
+    max-width: 100%;
+}
+/* end general styling */
+
+/**************************************************/
+/* buttons (default is gray) */
+/**************************************************/
+
+.mainsection .inputbutton, .accessmanagement .nav-btn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+    background-color:#008dc9;
+    border:1px solid #124d77;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.mainsection .inputbutton:hover, .accessmanagement .nav-btn:hover {
+    box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+    background:-moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:-webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:-o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:-ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33',GradientType=0);
+    background-color:#f2a46c;
+    border:1px solid #fd9143;
+    text-shadow:0px 1px 0px #db610f;
+}
+
+.blockpanel .inputbutton{
+    display: inline-block;
+    height: 40px;
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/* button on the login page  */
+.metapanel .metalink2 .nav-btn {
+    border:0;
+    text-shadow:0;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.mainsection .inputbutton:focus, .accessmanagement .nav-btn:focus, .mainsection .inputbutton:active, .accessmanagement .nav-btn:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) inset;
+    text-decoration: none;
+}
+
+.mainsection .inputbutton:hover, .accessmanagement .nav-btn:hover {
+    background-color: #dbd8d8;
+}
+
+.metalink .nowrap{
+    color: #fff;
+}
+/* end buttons */
+
+.datatrain-focus,
+.datatrain-no-focus{
+    overflow: hidden;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.datatrain-focus img,
+.datatrain-no-focus img{
+    opacity: 1 !important;
+}
+
+.datatrain-no-focus img{
+    width: 162px !important;
+    height: 98px !important;
+    margin-left: -81px !important;
+    max-width: none !important;
+}
+.datatrain-focus img{
+    max-width: none !important;
+    width: 162px !important;
+}
+
+/**************************************************/
+/* job search & my jobs typography */
+/**************************************************/
+
+.jobsearch .linklabel {
+    font-family: 'HelveticaNeueW01-65Medi','Helvetica Neue W01 65 Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #444;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.jobsearch .action a, .blockpanel .metalink a, .mainsection .infopanel .metalink2 a {
+    font-family: 'HelveticaNeueW01-65Medi','Helvetica Neue W01 65 Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #3571A6;
+    text-decoration: none;
+}
+
+.jobsearch .action a:hover, .blockpanel .metalink a:hover, .mainsection .infopanel .metalink2 a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.column165 .helppanel .helpsubtitle {
+    font-family: 'Avenir LT W01 85 Heavy',Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+.mainsection .searchresults .resultstitlepanel .subtitle, .mainsection .myjobpage .resultstitlepanel .subtitle {
+    color: #555;
+    font-weight: normal;
+}
+
+.mainsection .searchresults .listingperpagepanel .label {
+    float: left;
+    font-size: 13px;
+    color: #555;
+}
+
+.mainsection .searchresults .sortbypanel .label {
+    float: left;
+    font-size: 13px;
+    color: #555;
+}
+
+.mainsection .jobsearch .listingperpagepanel,
+.mainsection .jobsearch .sortbypanel {
+    margin-bottom: 15px;
+}
+
+.mainsection .titlelink a, .jobsearch .titlelink a {
+    font-family: 'HelveticaNeueW01-65Medi','Helvetica Neue W01 65 Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #3571a6;
+    text-decoration: none;
+}
+
+.mainsection .titlelink a:hover, .jobsearch .titlelink a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.mainsection .jobposted, .mainsection .jobpostedinline {
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 170%;
+    color: #555555;
+    text-decoration: none;
+}
+
+.mainsection .searchresults .label, .mainsection .myjobpage .label, .mainsection .pagerpanel .pagersectionpanel .pagerlabel {
+    font-size: 13px;
+    color: #555;
+}
+
+.mainsection .pagerpanel .pagersectionpanel .pagerlinkoff a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #008bcb;
+}
+
+.mainsection .pagerpanel .pagersectionpanel .pagerlinkselected a {
+    font-family: 'HelveticaNeueW01-65Medi','Helvetica Neue W01 65 Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 170%;
+    color: #555555;
+    text-decoration: none;
+}
+
+.mainsection .jobtype {
+    font-size: 13px;
+    color: #555;
+}
+
+.column165 .legendpanel .legendtitle {
+    color: #3B3B3B;
+    font-family: 'Avenir LT W01 85 Heavy',Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.mainsection .myjobpage .listingperpagepanel .label {
+    float: left;
+    margin-right: 5px;
+}
+
+.mainsection .myjobpage .statuspanel {
+    background-color: #f7f7f7;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.mainsection .myjobpage .statuspanel h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.mainsection .myjobpage .statuspanel .text {
+    font-family: 'HelveticaNeueW01-65Medi','Helvetica Neue W01 65 Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #555555;
+    text-decoration: none;
+}
+
+.helppanel .no-change-header {
+    margin: 0;
+    padding: 0;
+}
+
+.columnfull .no-change-header .titlepage{
+    margin-left: 0;
+}
+
+/* end job search typography */
+
+/**************************************************/
+/* job apply typography */
+/**************************************************/
+
+.headersection .headerpanel .userpanel {
+    box-sizing: border-box;
+    height: 42px;
+    overflow: display;
+    padding: 15px 0 0 30px;
+    width: 924px;
+}
+
+#facetedSearchBody .headersection .headerpanel .userpanel {
+    width: 824px;
+    padding-top: 12px;
+}
+
+.headersection .headerpanel .leftpanel .userpanel {
+    padding: 0;
+    height: 27px;
+    position: static !important;
+    width: 130px;
+    display: block !important;
+    box-sizing: content-box;
+    float:right;
+    overflow: auto;
+}
+
+.headersection .headerpanel .leftpanel .separator {
+    display: none;
+}
+
+.headersection .headerpanel .leftpanel a {
+    color: #fff !important;
+}
+
+.headersection .headerpanel .rightpanel {
+    box-sizing: border-box;
+    float:right;
+    width: 100px;
+    padding: 15px 30px 0 10px;
+    height: 42px;
+    margin: 0;
+}
+
+.headersection .headerpanel .rightpanel a {
+    color: #fff !important;
+}
+
+.headersection .headerpanel .rightpanel #editTemplateMultipart-editForm-content-ftf-flowHeader-jobCartAction, .headersection .headerpanel .rightpanel .metalinkimg, .headersection .headerpanel .rightpanel .separator {
+    display: none;
+}
+
+.headersection .headerpanel .rightpanel .metapanel .metagrouppanel {
+    position: static;
+    width: auto;
+}
+
+/* other right header (jobs) */
+.right-header-info {
+    width: 180px;
+    box-sizing: border-box;
+    padding: 12px 30px 0 0;
+    text-align: right;
+}
+
+.right-header-info #header-actions-signed-in {
+    margin: 0;
+}
+
+.right-header-info #jobcart-state {
+    display: none;
+}
+.headersection .headerpanel .userpanel div#topNavInterface\.isMyAccountDisplayed{
+	margin-right: -100px;
+}
+.headersection .headerpanel .userpanel .userpanel .separator{
+	display: none;
+}
+.headersection .headerpanel .userpanel .userpanel a{
+	color: #fff;
+}
+.headersection .headerpanel .userpanel .username {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.headersection .metalink a, .footeraction .footeractionpanel .footergroupactionpanel .metalink2 a, .mainsection .metapanel .metalink a {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 14px;
+    color: #3571A6;
+    text-decoration: none;
+}
+
+.headersection .metalink a:hover, .footeraction .footeractionpanel .footergroupactionpanel .metalink2 a:hover, .mainsection .metapanel .metalink a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.headersection .headerpanel .userpanel .separator {
+    float: right;
+    margin: 0 0 0 6px;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 14px;
+    color: #555;
+}
+
+.headersection .headerpanel .linkpanel .link a {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #444;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+html > body .headersection .headerpanel .linkpanel .link a {
+    padding: 4px 22px;
+    color: #008dc9;
+}
+
+.headersection .headerpanel .linkpanel .link .magnifierimg,
+.headersection .headerpanel .linkpanel .selectedlink .magnifierimg{
+    display: none;
+    visibility: hidden;
+}
+
+.headersection .headerpanel .linkpanel .link a:hover {
+    text-decoration: none;
+}
+
+.headersection .headerpanel .linkpanel .selectedlink a, .headersection .headerpanel .linkpanel .selectedlink span {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.mainsection .infopanel .infojob {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #555;
+    text-decoration: none;
+}
+.mainsection .infopanel .infojob .metalink2 a{
+    font-size: 20px;
+}
+
+.blockpanel .metalink {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.blockpanel .metalink a, .mainsection .infopanel .metalink2 a {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #3571A6;
+    text-decoration: none;
+}
+.infopanel .metalink2 .command-link-visited{
+    font-size: 18px;
+}
+
+.blockpanel .metalink a:hover, .mainsection .infopanel .metalink2 a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.blockpanel .page-header-titleb {
+    font-size: 1.6em;
+}
+
+.mainsection .metapanel .flowstatus {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #555;
+    text-decoration: none;
+}
+
+.mainsection .metapanel .metalink a {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #3571A6;
+    text-decoration: none;
+}
+
+.mainsection .metapanel .metalink a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+/* page title */
+.myaccount .title,
+.myaccount .titleaction,
+.mainsection .titlepage,
+.accessmanagement .page-heading-header-title {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 130%;
+    color: #444;
+    text-decoration: none;
+}
+
+.myaccount .titleblock,
+.summary .titleblock {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #444;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.myaccount .secondcolumn {
+    vertical-align: middle;
+}
+
+/* page subtitle */
+.blockpanel .title,
+.blockpanel .entity-title,
+.shiftavailability .titlesection,
+.alert-title {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 130%;
+    color: #555;
+    text-decoration: none;
+}
+
+.blockpanel .list-header .subtitle,
+.myaccount .subtitleblock,
+.summary .subtitleblock,
+.mainsection .subtitle {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 170%;
+    color: #555555;
+    text-decoration: none;
+}
+
+/* page label and copy */
+.mainsection .text, .jobsearch .text, .jobsearch .savepanel .descriptionpanel .text, .mainsection .searchresults .text, .mainsection .myjobpage .text, .blockpanel .descriptionpanel .text, .myaccount .text, .shiftavailability .shiftcontentpanel, .shiftavailability .daycontentpanel, .shiftavailability .daycontentpanelread, .alert-message, .mainsection .text, .accessmanagement .page-header-text, .mainsection .separator, .messagecenter .page-header-text, .messagecenter .entity-value, .messagecenter .list-column-value {
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    /* line-height: 170%; */
+    color: #555555;
+    text-decoration: none;
+}
+
+.mainsection .page-header .page-header-text{
+    font-size: 13px;
+}
+.mainsection .page-header #dialogTemplate-dialogForm-pageHeaderSubView-pageHeaderSubView-pageHeaderText.page-header-text{
+	letter-spacing: 0;
+	font-weight: normal;
+}
+.mainsection .page-header #dialogTemplate-dialogForm-pageHeaderSubView2-pageHeaderSubView-pageHeaderText.page-header-text{
+	letter-spacing: 0;
+	font-weight: normal;
+}
+.mainsection .entity-mandatory-field{
+    margin-top: 10px;
+    float: left;
+}
+
+.pdf-viewer-style body, table th, table td, label, input, button, select, textarea, .pdf-viewer-style input[type="text"], .pdf-viewer-style input[type="password"], .pdf-viewer-style input[type="datetime"], .pdf-viewer-style input[type="datetime-local"], .pdf-viewer-style input[type="date"], .pdf-viewer-style input[type="month"], .pdf-viewer-style input[type="time"], .pdf-viewer-style input[type="week"], .pdf-viewer-style input[type="number"], .pdf-viewer-style input[type="email"], .pdf-viewer-style input[type="url"], .pdf-viewer-style input[type="search"], .pdf-viewer-style input[type="tel"], .pdf-viewer-style input[type="color"], .pdf-viewer-style .uneditable-input {
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    color: #555555;
+    text-decoration: none;
+}
+
+.progress-bar {
+    line-height: 100% !important;
+}
+
+/* right pane title */
+.column165 .helppanel .helptitle {
+    font-family: 'Avenir LT W01 85 Heavy',Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+/* right pane copy */
+.column165 .helppanel .helplabel {
+    margin: 7px 0 14px;
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #555555;
+    text-decoration: none;
+}
+
+/* field labels */
+.blockpanel .entity-label, .menuHierarchy label, .entity-checkbox-label, .summary .label, .myaccount .label, .mainsection .label, .accessmanagement .entity-label-mandatory {
+    /* margin: 20px 0 5px; */
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 170%;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 8px !important;
+}
+
+/* import section divider */
+.partner-options.import {
+    border-bottom: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.partner-options.import .partnerLogo {
+    width: 30px;
+    margin: 17px 30px 0 0 !important;
+}
+
+/* upload resume note */
+.blockpanel .textindentpanel .labelnote {
+    margin: 7px 0 14px;
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #555555;
+    text-decoration: none;
+}
+
+/* input fields DADD*/
+input[type='text'], input[type='password'] {
+    /* min-width: 200px; */
+    background-color: #f7f7f7;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    height: 35px;
+    max-width: 1000px;
+    padding: 0 10px;
+    width: 231px !important;
+    box-shadow: 0px 2px 2px #eee inset;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    color: #555;
+    line-height: 170%;
+}
+
+.mainsection .inputtext,
+.myaccount .inputtext300,
+.mainsection .inputtext300,
+.jobsearch .inputtext,
+.jobsearch .savepanel .inputtext,
+.mainsection .listingperpagepanel .inputselect,
+.blockpanel .input-text,
+.blockpanel .input-smaller input,
+.blockpanel .sugInput-input {
+    background-color: #f7f7f7;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    height: 35px;
+    max-width: 1000px;
+    padding: 0 10px;
+    width: 231px !important;
+    box-shadow: 0px 2px 2px #eee inset;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    color: #555;
+    line-height: 170%;
+}
+
+.processesTaskMainDiv .mainsection .input-text {
+    width: 305px !important;
+}
+
+/* select fields */
+.mainsection .inputselect,
+.jobsearch .resultpropertiescontentpanel .inputselect,
+.mainsection .searchresults .sortbypanel .inputselect,
+.blockpanel .input-select,
+.blockpanel .input-date-time select,
+.blockpanel .entity-value select {
+    background:  transparent url('../images/dropdown-profile.png') no-repeat;
+    color: #4a4a4a !important;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 233px !important;
+    box-sizing: border-box;
+    border: 0;
+    margin:0;
+    height: 35px;
+    padding: 4px 10px 4px 10px;
+    -webkit-padding-end: 40px;
+    -moz-padding-end: 40px;
+    text-indent: 1px;
+    max-width: 1000px;
+    font-family: 'HelveticaNeueW01-45Ligh','Helvetica Neue W01 45 Light','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    font-size: 13px !important;
+    line-height: 170%;
+    color: #555 !important;
+    text-overflow: ellipsis;
+}
+
+.processesTaskMainDiv .mainsection .input-select {
+    width: 305px !important;
+    background:  transparent url('../images/dropdown-profile-tasks.png') no-repeat;
+}
+
+/* text area */
+textarea {
+    min-width: 200px;
+    max-width: 665px;
+    padding: 0px 5px;
+    box-shadow: 0px 2px 2px #eee inset;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    color: #555;
+    line-height: 170%;
+}
+
+.myaccount .inputtextmulti,
+.mainsection .inputtextmulti,
+.mainsection .inputtextmulti2,
+.mainsection .inputtextmulti3,
+.blockpanel .input-textarea {
+    width: 98%;
+    min-width: 200px;
+    max-width: 665px;
+    font-family: 'HelveticaNeueW01-45Ligh','Helvetica Neue W01 45 Light','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    font-size: 13px !important;
+    line-height: 170%;
+    color: #555 !important;
+   /* margin-left: 50px; */ /*Commented to fix Text box Allignment Issue*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-explanationBlock .description,
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-1-explanationBlock .description,
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-2-explanationBlock .description,
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-3-explanationBlock .description,
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-4-explanationBlock .description{
+    margin-left: 36px;
+}
+
+
+
+.mainsection .textindentpanel .inputselect1 {
+    width: 250px;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px #eee inset;
+    margin-top: 5px;
+    padding: 4px 5px;
+    background-color: #fff;
+    color: #444;
+}
+
+select.inputselect, .mainsection .textindentpanel .inputselect1, .custom-form-columns select { }
+
+.custom-form-columns .entity-block .input-text.entity-value{
+    /*background-color: #f7f7f7;
+    height: 35px;
+    width: 231px !important;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    padding:  0 10px;
+    max-width: 1000px;*/
+}
+.custom-form-columns .entity-block .entity-label{
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.custom-form-columns .entity-block legend {
+	margin-bottom: 8px !important;
+}
+
+.custom-form-columns .entity-block legend .entity-label {
+	margin-bottom: 0 !important;
+}
+
+.custom-form-columns .entity-block .input-select{
+    /*width: 233px !important;
+    box-sizing: border-box;
+    border: 0;
+    height: 35px;
+    background:  #fff url('../images/dropdown-profile.png') no-repeat;
+    color: #4a4a4a !important;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 4px 10px;
+    max-width: 1000px;*/
+}
+
+
+.custom-form-columns .entity-block  select[multiple] {
+    background: #e5e5e5;
+    background: -moz-linear-gradient(left,  #e5e5e5 0%, #f5f5f5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #e5e5e5 0%,#f5f5f5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #e5e5e5 0%,#f5f5f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+    border: 1px solid #c4c4c4;
+}
+
+.input-date-time.entity-value.fs-508 .fs-508-inline select{
+    border: 0;
+    height: 35px;
+    padding-left: 2px;
+    box-sizing: border-box;
+    background:  transparent url('../images/dropdown-date.png') no-repeat;
+    font-size: 10px;
+    color: #4a4a4a !important;
+    border-radius: 0;
+    box-shadow: none;
+    min-width: auto;
+    max-width: auto;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    width: 74px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.processesTaskMainDiv .input-date-time.entity-value.fs-508 .fs-508-inline select {
+    width: 98px !important;
+    margin-right: 5px;
+    background:  transparent url('../images/dropdown-date-tasks.png') no-repeat;
+}
+
+
+.columnfull .entity-indent .custom-form-grid{
+    border-bottom: 1px solid #dfdfdf;
+    width: 97%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* minor stuff... */
+.blockpanel .input-date-time-text, .blockpanel .entity-select-action {
+    font-size: 13px;
+    color: #3571A6;
+    text-decoration: none;
+}
+
+.blockpanel .input-date-time-text:hover, .blockpanel .entity-select-action:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.questionnaire legend, .questionnaire label {
+    width: 100%;
+    font-size: 13px !important;
+    line-height: 170% !important;
+}
+
+.blockpanel .fs-508-block, .blockpanel .textindentpanel {
+    padding-left: 0;
+    font-size: 1em;
+}
+
+.mainsection .metalink2 a, .mainsection .pagerpanel .pagersectionpanel .pagerlink a, .blockpanel .loc-action-btn a, .mainsection .textlink a, .myaccount .metalink2 a, .accessmanagement .link-small a, .blockpanel .list .listpanel .metalink2 a, .footersection .poweredbytaleolink a, .messagecenter .toolbar a, .messagecenter .list-column a, .alert-button-panel a, .messagecenter .section-name a {
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 170%;
+    color: #008BCB !important;
+    text-decoration: none;
+}
+
+.mainsection .metalink2 a:hover, .mainsection .pagerpanel .pagersectionpanel .pagerlink a:hover, .blockpanel .loc-action-btn a:hover, .mainsection .textlink a:hover, .myaccount .metalink2 a:hover, .accessmanagement .link-small a:hover, .blockpanel .list .listpanel .metalink2 a:hover, .footersection .poweredbytaleolink a:hover, .messagecenter .toolbar a:hover, .messagecenter .list-column a:hover, .alert-button-panel a:hover, .messagecenter .section-name a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.summary .contentblockpanel .valuepanel {
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: #555555;
+    text-decoration: none;
+}
+
+.blockpanel .entity-value, .blockpanel .entity-value select, .summary .value, .myaccount .value {
+    font-size: 13px;
+    color: #555;
+}
+
+.assessment {
+
+}
+
+.assessment .action {
+    display: inline-block;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* end job apply typography */
+
+/**************************************************/
+/* job apply spacing */
+/**************************************************/
+
+.mainsection .headerpanel .metapanel {
+    margin: 24px 0 20px;
+}
+
+/* page title and subtitle spacing */
+.no-change-header {
+    margin: 15px 0;
+    padding: 0;
+}
+
+h1.no-change-header {
+    margin-top: 0;
+}
+h1.no-change-header span.titlepage{
+    font-weight: 700;
+	width: 250px;
+}
+h2.no-change-header span.title{
+    font-weight: 700;
+}
+
+/* personal information column width */
+.blockpanel .custom-form-columns {
+    width: 260px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.blockpanel .custom-form-columns:empty {
+    display: none;
+    width: 0;
+    padding: 0;
+}
+
+.blockpanel .custom-form-columns:only-child {
+    width: 100%;
+}
+
+.blockpanel .custom-form-columns:only-child .output-text.entity-value:not(#et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-fc108) {
+    border-top: 1px solid #e1e1e1;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 18px !important;
+    padding: 30px 0;
+}
+
+.blockpanel .custom-form-columns .entity-value .entity-comment,.blockpanel .custom-form-columns .output-text.entity-value .output-text {
+    font-size: 12px !important;
+    border: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+.inputselectpanel .inputselect{
+    /*width: 233px;
+    box-sizing: border-box;
+    border: 0;
+    height: 35px;
+    background:  #fff url('../images/dropdown-profile.png') no-repeat;
+    color: #4a4a4a !important;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 4px 45px 4px 10px;
+    max-width: 1000px;
+    text-overflow: ellipsis;*/
+}
+
+/* required fields star */
+.mainsection .requiredimg {
+    margin: 8px 5px 7px 0;
+}
+
+.mainsection .mandatory-img {
+    margin: 2px 5px 2px 0;
+}
+
+.error-label {
+    display: block;
+    padding-bottom: 0;
+}
+
+/* file attachment list */
+.blockpanel .attachment-list {
+    width: 100%;
+}
+
+.blockpanel .attachment-list .captionleft {
+    margin-top: 0;
+}
+
+/* minor stuff... */
+.legend-pos {
+    margin: 0;
+    padding: 0;
+}
+
+.blockpanel fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.blockpanel fieldset.entity-value legend {
+    margin: 0;
+    padding: 0;
+}
+
+.blockpanel .separatorhorizontalpanel {
+    border-width: 0 0 1px;
+}
+
+.mainsection .index {
+    padding-right: 15px;
+}
+
+/* upload data from linkedin? */
+.partner-options.import .fs-508 label {
+    margin: 0 20px 0 0;
+}
+
+/* pdf viewer */
+.bootstrap .form-actions {
+    background-color: #fff;
+    border: 0 none;
+    width: 310px;
+}
+
+/* end job apply spacing */
+
+
+
+
+
+/**************************************************/
+/* job apply train */
+/**************************************************/
+
+.datatrain-table {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.datatrain-wrapper {
+    width: auto;
+}
+
+.datatrain-left-shifter, .datatrain-right-shifter {
+    display: none;
+}
+
+.headerpanel .datatrain-tv, .headerpanel .datatrain-tv-left-margin, .headerpanel .datatrain-tv-right-margin {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+}
+
+.headerpanel .datatrain-tv-left-margin, .headerpanel .datatrain-tv-right-margin {
+    display: none;
+}
+
+.datatrain-tv {
+    width: 100%; /* set width of train here */
+    height: 100%;
+}
+
+.headerpanel .datatrain-t {
+    background-color: #fff;
+    padding: 0;
+}
+
+.datatrain-tv .datatrain-t {
+    display: block;
+    height: 100%;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    width: 100% !important; /* set width of train here */
+    left: 0 !important;
+}
+
+.datatrain-tv .datatrain-t fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.datatrain-tv-left-margin {
+    display: none;
+    height: 100%;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.datatrain-tv-right-margin {
+    display: none;
+    height: 100%;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.datatrain-wagon {
+    width: 67px;
+    height: 45px;
+    padding: 0 3px 3px 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'HelveticaNeueW01-65Medi','Helvetica Neue W01 65 Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 14px;
+    color: #444;
+    text-shadow: 0 1px 0px #fff;
+}
+
+.datatrain-focus .datatrain-wagon { /* train highlight color (default is blue) */
+    background: #17a1dc; /* Old browsers */
+    background: -moz-linear-gradient(top, #17a1dc 0%, #008dc9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #17a1dc 0%,#008dc9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #17a1dc 0%,#008dc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a1dc', endColorstr='#008dc9',GradientType=0 );;
+    border-color: #446173;
+    color: #fff;
+    text-shadow: none;
+}
+
+html > body .datatrain-focus {
+    width: 81px;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    padding: 5px 0;
+}
+
+html > body .datatrain-no-focus {
+    float: left;
+    width: 81px;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+
+html > body .datatrain-focus-left, html > body .datatrain-no-focus-left {
+    display: none;
+}
+
+html > body .datatrain-focus-right, html > body .datatrain-no-focus-right {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    margin: 0 8px;
+    top: 26px;
+    border: 0 !important;
+    width: 7px;
+    height: 11px;
+    background: url('../images/separator.gif') no-repeat;
+}
+
+.datatrain-wagon-link a, .sugInput-input-selected {
+    color: #3571A6;
+    font-weight: normal;
+}
+
+.datatrain-wagon-link a:hover {
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+.datatrain-empty-padder {
+    width: 0;
+}
+
+/*
+html > body .datatrain-focus-left {
+    border-radius: 3px 0 0 3px;
+}
+
+html > body .datatrain-focus-right {
+    border-radius: 0 3px 3px 0;
+}
+*/
+/* end job apply train */
+
+
+
+
+
+/**************************************************/
+/* my profile */
+/**************************************************/
+
+.blockpanel fieldset {
+    padding: 0;
+    border: none;
+}
+
+.blockpanel .selectedlinklabel {
+    display: none;
+}
+
+.blockpanel .labelcontent label {
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.blockpanel .labelcontent select {
+    /*width: 233px;
+    box-sizing: border-box;
+    border: 0;
+    display: block;
+    height: 35px;
+    background:  #fff url('../images/dropdown-profile.png') no-repeat;
+    color: #4a4a4a !important;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: ellipsis;
+    padding: 4px 45px 4px 10px;
+    max-width: 1000px;
+    margin-bottom: 12px;*/
+}
+
+.attachment-list thead tr {
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+}
+
+.myaccount .headerblockpanel,
+.summary .headerblockpanel {
+    display: block;
+    background-color: #E9E9E9;
+    padding: 6px 10px;
+}
+/* end my profile */
+
+
+/**************************************************/
+/* other stuff... */
+/**************************************************/
+
+#description_box h1 {
+    color: #555555;
+    font-family: 'Avenir LT W01 45 Book',Helvetica,Arial,Verdana,sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.headersection {
+
+}
+
+.headersection .headerpanel {
+    border-color: transparent;
+    border-style: none solid solid;
+    border-width: 0;
+    display: block;
+    margin: 0;
+    padding: 0 8px;
+    background: #008bcb;
+}
+
+.headersection .headerpanel .headerpanelContent {
+    color: #fff;
+}
+
+.headersection .box .boxtop {
+    display: none;
+}
+
+.accessmanagement .block-main-border-fix {
+    padding: 0px;
+}
+
+
+.accessmanagement .dialog-columns{
+	padding: 15px 505px 10px 0px !important;
+}
+
+.accessmanagement .dialog-columns-2 {
+    padding: 0px;
+    margin-top: 20px;
+    min-height: 150px;
+    height: auto !important;
+    height: 150px;
+    width: 500px;
+    margin-bottom: 30px;
+    float: left;
+    border-right:1px solid #cccccc;
+}
+    .accessmanagement .entity-label{
+        width: 180px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .accessmanagement input{
+        background-color: #f5f5f5;
+        border-color: #dfdfdf;
+        float: left;
+        height: 40px;
+        margin: 1px 0 15px;
+        width: 300px;
+    }
+
+    .accessmanagement #dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton, .accessmanagement #dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-CancelButton {
+        -moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+        -webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+        box-shadow: inset 0px 1px 0px 0px #54a3f7;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+        background: -moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background: -webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background: -o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background: -ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background: linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7', GradientType=0);
+        background-color: #008dc9;
+        border: 1px solid #124d77;
+        color: #fff;
+        font-size: 13px;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 40px;
+        width: 140px;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .accessmanagement #dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton:hover, .accessmanagement #dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-CancelButton:hover {
+        -moz-box-shadow: inset 0px 1px 0px 0px #ffcaa6;
+        -webkit-box-shadow: inset 0px 1px 0px 0px #ffcaa6;
+        box-shadow: inset 0px 1px 0px 0px #ffcaa6;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+        background: -moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background: -webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background: -o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background: -ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background: linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33', GradientType=0);
+        background-color: #f2a46c;
+        border: 1px solid #fd9143;
+        text-shadow: 0px 1px 0px #db610f;
+    }
+
+    .accessmanagement .dialog-columns-2 .iam-link-small-no-text-decoration{
+      float: left;
+      text-align: right;
+      width: 100%;
+    }
+        .accessmanagement .dialog-columns-2 .iam-link-small-no-text-decoration a{
+            margin-right: 68px;
+            margin-bottom: 5px;
+        }
+
+.accessmanagement input[type='text'], .accessmanagement input[type='password'] {
+    min-width: 238px;
+}
+
+.blockpanel .entity-instruction {
+    margin-top: 4px;
+}
+
+.accessmanagement .dialog-columns-openid {
+    border-left: 0 none transparent;
+    padding: 5px 15px;
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+}
+    .accessmanagement .dialog-columns-openid .dialog-columns-openid-text{
+        margin-top: 31px;
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+        font-weight: 700;
+    }
+
+.accessmanagement .dialog-columns-openid table {
+    margin: 0px 50px;
+}
+
+.accessmanagement .dialog-columns-openid table td {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#taleo_holder #dialogTemplate-dialogForm{
+    height: 791px;
+}
+
+.accessmanagement .entity-label {
+    color: #555555;
+    display: block;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 2px;
+    text-decoration: none;
+}
+
+.accessmanagement .entity-label .iam-entity-label-mandatory {
+    margin-right: 3px;
+}
+
+.accessmanagement .button-group-center {
+    margin-left: 180px;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    padding-left: 0;
+}
+    .accessmanagement .button-group-center input{
+        width: 143px;
+        height: 40px;
+		margin-right: 10px;
+    }
+    .accessmanagement .button-group-center #dialogTemplate-dialogForm-login-defaultCmd{
+        margin-right: 10px;
+    }
+    .accessmanagement .button-group-center #dialogTemplate-dialogForm-login-register{
+        margin-right: 0;
+    }
+    .accessmanagement .button-group-center #dialogTemplate-dialogForm-defaultCmd{
+        float: left;
+    }
+    .accessmanagement .button-group-center #dialogTemplate-dialogForm-cancel{
+        float: left;
+        margin-left: 10px;
+    }
+
+.accessmanagement .entity-mandatory-field {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.accessmanagement .iam-block-main-border-fix {
+    margin: 15px 0px 0px 0px;
+    font-size: 11px;
+    display: block;
+    line-height: 13px;
+    clear:left;
+}
+
+.headersection .spacerlink2panel {
+    border-style: none;
+    border-width: 0;
+    display: block;
+    margin: 0;
+    padding: 0px;
+}
+
+.mainsection .buttongrouppanel2 {
+    min-height: 41px;
+}
+
+
+
+.mainsection .buttongrouppanel2 .on-the-left .inputbutton{
+    height: 40px;
+    width: 197px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+    background-color:#008dc9;
+    border:1px solid #124d77;
+    margin:0 16px 0 0;
+}
+    .mainsection .buttongrouppanel2 .on-the-left .inputbutton:hover{
+        box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+        background:-moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:-webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:-o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:-ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33',GradientType=0);
+        background-color:#f2a46c;
+        border:1px solid #fd9143;
+        text-shadow:0px 1px 0px #db610f;
+    }
+
+.headersection:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+.mainsection .iconpanelupdated, .mainsection .iconcontentpanelupdated, .headersection .link2panel, .mainsection .myjobpage .messagenotepanel, .alert-message-notification, .shiftavailability .allshiftpanel, .shiftavailability .alldaypanel, .jobsearch .linkpanel, .jobsearch .boxpanelb2-top, .jobsearch .boxpanelb3-top, .jobsearch .boxpanelb4-top, .processesNotSelectedTaskItem td, .processes-table-link {
+    background-color: #E9E9E9;
+    padding: 0;
+}
+
+.headersection .headerpanel .linkpanel {
+    margin: 0;
+}
+
+.headersection .headerpanel .linkpanel:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.headersection .headerpanel .linkpanel {
+    padding: 20px 0px 0px 50px;
+    width: 974px;
+    background: #fff;
+}
+
+
+.headersection .headerpanel .linkpanel .link, .headersection .headerpanel .linkpanel .selectedlink {
+    background-color: #dbeef9;
+    border-left: 0;
+    border-top: 1px solid #008dc9;
+    border-right: 1px solid #008dc9;
+    border-bottom: 0;
+    color: #008dc9;
+    float: left;
+    box-sizing: border-box;
+    height: 38px;
+    margin: 12px 0 0 0;
+    margin-right: 0 !important;
+    z-index: 2;
+    padding: 9px 15px 0 15px;
+    min-width: 100px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.headersection .headerpanel .linkpanel .selectedlink {
+    background: #1fa9e3; /* Old browsers */
+    background: -moz-linear-gradient(top, #1fa9e3 0%, #17a2dd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1fa9e3 0%,#17a2dd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1fa9e3 0%,#17a2dd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fa9e3', endColorstr='#17a2dd',GradientType=0 );
+    color: #fff;
+    padding: 12px 15px 0 15px !important;
+    height: 50px;
+    margin-top: 0;
+    font-size: 16px;
+    border: 0;
+}
+
+.headersection .headerpanel .linkpanel li:first-child .link{
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+    border-left: 1px solid #008dc9;
+}
+
+.headersection .headerpanel .linkpanel li:first-child{
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+    border-left: 1px solid #008dc9;
+}
+
+.headersection .headerpanel .linkpanel li:last-child .link {
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+}
+
+.headersection .headerpanel .linkpanel li:nth-last-child(2) .link {
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+}
+    .headersection .headerpanel .linkpanel li:nth-last-child(2) .selectedlink{
+        margin-left: -1px;
+    }
+.headersection .link2panel .link2 {
+    border: 0 none;
+    display: inline;
+    float: left;
+    margin: 13px 8px;
+    padding: 0;
+}
+
+.footeraction .footeractionpanel {
+    border: 0 none transparent;
+    height: 42px;
+    border-top: 1px solid #e1e1e1 !important;
+    background-color: #fff;
+    padding: 30px 0;
+}
+    #bottomBarInterface .footeraction .footeractionpanel{
+        border-top: none !important;
+    }
+
+    .footeraction .footeractionpanel .buttongrouppanel2 .leftpanel input{
+        height: 40px;
+        width: 197px;
+        -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+        background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+        background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+        background-color:#008dc9;
+        border:1px solid #124d77;
+        margin:0 16px 0 0;
+    }
+    .footeraction .footeractionpanel .buttongrouppanel2 .leftpanel input:hover{
+        box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+        background:-moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:-webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:-o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:-ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+        background:linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33',GradientType=0);
+        background-color:#f2a46c;
+        border:1px solid #fd9143;
+        text-shadow:0px 1px 0px #db610f;
+    }
+
+.headersection .link2panel .separatorlink2 {
+    color: #808080;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: normal;
+    margin: 13px 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.headersection .link2panel .link2 a {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: black;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.headersection .link2panel .link2 a:hover {
+    text-decoration: none;
+}
+
+.headersection .link2panel .selectedlink2 {
+    background-color: white;
+    border-color: #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    float: left;
+    margin: 7px 8px;
+    padding: 5px;
+    position: relative;
+}
+
+
+
+.footeraction .footeractionpanel {
+    border: 0 none transparent;
+    height: 100px;
+}
+
+.footeraction .box .boxbottom {
+    display: none;
+}
+
+
+.mainsection .iconcontentpanel {
+    padding-bottom: 10px;
+    padding-top: 4px;
+}
+
+/* job search */
+.jobsearch {
+    padding: 0 30px;
+}
+
+.jobsearch .topSearchContainer {
+    background: #17a1dc; /* Old browsers */
+    background: -moz-linear-gradient(top, #17a1dc 0%, #008dc9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #17a1dc 0%,#008dc9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #17a1dc 0%,#008dc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a1dc', endColorstr='#008dc9',GradientType=0 );
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 0;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .criteria-field {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .criteria-field label {
+    color: #fff;
+    margin-right: 10px;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .criteria-field input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    background: #fff;
+    margin: 0 10px 0 0;
+    box-shadow: 0;
+    display: inline-block;
+    height: 40px;
+    width: 160px !important;
+    border-top: 1px solid #0081b8;
+    border-left: 1px solid #0081b8;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .criteria-field input#search{
+  width: 144px !important;
+  height: 40px !important;
+    background-image: url(../images/search-btn.png);
+}
+.jobsearch .topSearchContainer .criteria-fields .criteria-field.search-button-container{
+
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-button-container {
+    width:auto;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container {
+    float: right;
+    width: 180px;
+    text-align: left;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul {
+
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul li {
+
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul li a {
+    color: #fff;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul li a#clearButton {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul li a#advancedSearch {
+    font-weight: bold;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul li a#advancedSearch:hover {
+    text-decoration: none;
+}
+
+.jobsearch .topSearchContainer .criteria-fields .search-panel-links-container ul li a#advancedSearch:before {
+    content: "\f013";
+    font-family: FontAwesome;
+    display:inline;
+    margin-right: 5px;
+}
+
+.jobsearch .no-change-header {
+    margin: 12px 0;
+}
+
+.jobsearch .resultpropertiescontentpanel {
+    background-color: #f9f9f9;
+    border-image: none;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -1px;
+    padding: 10px;
+    border: 1px solid #b9b9b9;
+    border-top: 0 none transparent;
+}
+
+.jobsearch .boxresults {
+    display: none;
+}
+
+.jobsearch .linkpanel:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.jobsearch .linkpanel {
+    list-style-type: none;
+}
+
+.jobsearch .linkpanel li {
+
+}
+
+.jobsearch .linkpanel li a {
+    background: #ffaa00;
+    color: #008dc9;
+    border-top: 1px solid #008dc9;
+    border-left: 1px solid #008dc9;
+}
+
+.jobsearch .selectedlink {
+    background-color: #F7F7F7;
+    border-color: silver silver transparent;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    border-style: solid solid none;
+    border-width: 1px;
+    bottom: -1px;
+    cursor: default;
+    float: left;
+    margin: 0 0 0 6px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.jobsearch .labelcontent, .jobsearch .contentdatapanel .searchLookup {
+    display: block;
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+.jobsearch .action {
+    margin-top: 5px;
+}
+
+.jobsearch .label, .jobsearch .savepanel .label, .jobsearch .resultpropertiescontentpanel .label {
+    display: block;
+    margin: 0 0 6px !important;
+}
+
+.jobsearch .contentgrouppanel .inputtext {
+    margin: 0 0 21px;
+}
+
+.jobsearch .inputtext, .jobsearch .resultpropertiescontentpanel .inputselect {
+    max-width: 310px;
+}
+
+.column165 .helppanel .helplink a, .filter-link-anchor {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 14px;
+    color: #3571a6;
+    text-decoration: none;
+}
+
+.column165 .helppanel .helplink a:hover, .filter-link-anchor{
+    color: #9c510d;
+    text-decoration: underline;
+}
+
+/* job page spacing */
+.headersection .headerpanel {
+    border-color: transparent;
+    border-style: none solid solid;
+    border-width: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.mainsection .infopanel {
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.mainsection .metagrouppanel {
+    background-color: transparent;
+    display: block;
+    margin: 25px 0 10px;
+    padding: 0;
+}
+
+.mainsection .metapanel2 {
+    background-color: transparent;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.mainsection .metapanel {
+    background-color: transparent;
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.mainsection .pagerpanel {
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mainsection .pagerpanel {
+    background: none repeat scroll 0 0 #f5f5f5;
+    border: 1px solid #E1E5E2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    color: #555555;
+    display: block;
+    margin: 25px 0;
+    padding: 6px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.mainsection .pagerpanel .pagersectionpanel {
+    display: inline;
+    margin: 0 8px;
+}
+
+.mainsection .boxtraintop {
+    display: none;
+}
+
+/* tasks */
+.processesTaskMainDiv {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    border: 1px solid #b9b9b9;
+    border-top: 0 none transparent;
+}
+
+.processesTaskMainDiv .blockpanel .entity-label {
+    margin: 0px;
+}
+
+.processesTaskMainDiv input[type='text'], .processesTaskMainDiv input[type='password'] {
+    min-width: auto;
+}
+.processesTaskMainDiv .custom-form-columns span.output-text.entity-value{
+    display: inline;
+}
+.processesTaskMainDiv .output-text.entity-value {
+    padding: 6px 0;
+    display: block;
+}
+
+.processesTaskMainDiv .cf-data-table input[type='text'], .processesTaskMainDiv .cf-data-table input[type='password'] {
+    font-size: 12px;
+}
+
+.processesTaskMainDiv .cf-data-table, .processesTaskMainDiv .cf-data-table {
+    font-size: 12px    ;
+}
+
+.processesTaskMainDiv  .list.cf-data-table {
+    font-size: 9px;
+}
+
+.processesTaskMainDiv .mandatory-img {
+    margin-top: 0px;
+    margin-right: 3px;
+    margin-left: 1px;
+}
+
+.processesTaskMainDiv .blockpanel .entity-noframe {
+    border: 0 none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.processesTaskMainDiv .blockpanel .list-header-title {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.entity-columns-left img, .taskPanel .blockpanel img {
+    max-width: 406px;
+}
+
+.blockpanel fieldset.entity-value, .blockpanel span.input-date-time {
+    border: 0 none transparent;
+    font-size: 1em;
+    width: 100% !important;
+    max-width: none;
+}
+
+.processesNotSelectedTaskItem td {
+    padding: 6px 0 10px 10px;
+    border: 0;
+}
+
+.processesNotSelectedTaskItem td:hover {
+    text-decoration: none;
+    border: 0;
+}
+
+.blockpanel .page-header > *:first-child {
+    background-color: #999;
+    text-shadow: 0 -1px 0 #000000;
+    border-bottom: 1px solid #333;
+}
+
+.pane .page-header > div {
+    background-color: transparent !important;
+    text-shadow: 0 0 0 transparent !important;
+    border-bottom: 0 transparent none !important;
+}
+
+/* Questions - Detailed Competencies */
+.formskill .tableskills .tableskillscolumn {
+    width: 150px;
+    border: none;
+}
+
+.formskill .tableskills .tableskillscolumn fieldset {
+    box-shadow: none;
+    width: auto;
+    min-width: inherit;
+    max-width: inherit;
+}
+
+.formskill .tableskills .tableskillscolumn input {
+    width: auto;
+    min-width: inherit;
+    max-width: inherit;
+}
+
+.list-top-panel{
+    background-color: #d7effb !important;
+    margin-left: 20px;
+    border-radius: 10px !important;
+    border: 1px solid #9dd2ed !important;
+    min-height: 69px;
+}
+
+    .list-top-panel .help{
+        display: none;
+        visibility: hidden;
+    }
+    .list-top-panel span a{
+        padding: 5px;
+    }
+    .list-top-panel .metalink2{
+        float: right;
+        width: 100%;
+    }
+        .list-top-panel .metalink2 a{
+            margin:5px 80px 0 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: #008bcb !important;
+        }
+            .list-top-panel span .metalink2 a{
+                margin:-6px 123px 0 0;
+                font-weight: 500;
+            }
+        .list-top-panel .metalink2 .save-search{
+            float: right;
+            background-image: none;
+        }
+    .list-top-panel-box{
+        float: left;
+        width: 70%;
+        margin-top: -60px;
+    }
+        .list-top-panel-box .sort-panel{
+            float: left;
+            display: inline-block;
+            margin: 10px 0 0 20px;
+            width: 100%;
+        }
+            .list-top-panel-box .sort-panel label{
+                margin-right: 20px;
+                font-size: 15px;
+            }
+            .list-top-panel-box .sort-panel div{
+                display: inline-block !important;
+            }
+            .list-top-panel .sort-panel select{
+                width: 183px;
+                height: 35px;
+                box-sizing: border-box;
+                background:  #fff url('../images/button_sort.png') no-repeat;
+                background-position: left;
+                background-size: cover;
+                color: #4a4a4a !important;
+                -webkit-border-radius: 1px !important;
+                -moz-border-radius: 1px !important;
+                border-radius: 1px !important;
+                border:0;
+                box-shadow: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: '';
+                padding: 4px 10px;
+                -webkit-padding-end: 40px;
+                -moz-padding-end: 40px;
+            }
+
+            .list-top-panel .sort-panel select::-ms-expand {
+                display: none;
+            }
+
+.multiline-list li:last-child{
+    border-bottom: none;
+}
+
+#multilineListContainer{
+    border: 1px solid #e6e5e5;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+    .multiline-list > li {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 0;
+        border: 0 !important;
+        min-height: 60px;
+        height:auto !important;
+        height:60px;
+    }
+
+    .multiline-list .multiline-icon-container{
+        top:24%;
+        left: 20px;
+        width: 16px;
+    }
+    .multiline-data-container{
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-right: 210px !important;
+        margin-right: 0 !important;
+        border-bottom: 1px solid rgb(214, 214, 214);
+        margin-left: 0;
+        min-height: 60px;
+        height: auto !important;
+        height: 60px;
+    }
+
+    .multiline-list > li:last-child .multiline-data-container {
+        border-bottom: 0;
+    }
+        .multiline-data-container a{
+            text-decoration: none;
+            color: #008bcb;
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+        .multiline-data-container span{
+            margin-right: 5px;
+        }
+
+    .multiline-action-container{
+        top: 30px;
+        right: 45px;
+        margin-right: 0;
+    }
+        .multiline-action-container .result-list-button{
+            /*DA-BUTTON STYLE*/
+            -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+            box-shadow:inset 0px 1px 0px 0px #54a3f7;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+            background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+            background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+            background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+            background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+            background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+            background-color:#008dc9;
+            border:1px solid #124d77;
+            color: #fff;
+            font-size: 13px;
+            display: inline-block;
+            box-sizing: border-box;
+            height: 40px;
+            min-width: 140px;
+            text-align: center;
+            padding: 11px 20px 5px 20px;
+        }
+            .multiline-action-container .result-list-button:hover{
+                -moz-box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+                -webkit-box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+                box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+                background:-moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                background:-webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                background:-o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                background:-ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                background:linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33',GradientType=0);
+                background-color:#f2a46c;
+                border:1px solid #fd9143;
+                text-shadow:0px 1px 0px #db610f;
+            }
+
+        .additional-action-buttons-container {
+            margin-bottom: 0;
+            margin-right: 45px !important;
+            padding-bottom: 10px;
+        }
+
+.jobListPanel{
+    width: 702px !important;
+}
+
+.filter-panel{
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-sizing: border-box;
+    width: 259px !important;
+    background: #f5f5f5;
+    margin-bottom: 25px;
+}
+    .filter-panel .filter-group{
+        padding: 10px 22px 0 22px;
+        margin: 0;
+        background: none;
+        border:none;
+        box-sizing: border-box;
+    }
+
+    .filter-panel .filter-group .filter-header .icon.filter-colapse-open{
+        visibility: hidden;
+        display: none;
+    }
+    .filter-panel .filter-group .filter-header a{
+        font-size: 16px;
+        color: #4a4a4a;
+    }
+
+    .filterSeparator {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .filterSeparator:last-child {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    #POSTING_DATE-content{
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    .filter-panel .filter-group-content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .filter-panel .filter-group-content .input-wrapper{
+    }
+    .filter-panel .filter-group-content select{
+        background: url(../images/button.png) no-repeat right center;
+        border: none;
+        font-size: 13px;
+        height: 35px;
+        padding: 0 5px;
+        width: 213px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        padding: 4px 10px;
+        text-overflow: ellipsis;
+        -webkit-appearance: button;
+        -webkit-padding-start: 2px;
+        -webkit-user-select: none;
+        color: #6a6c6f;
+        overflow: hidden;
+        white-space: nowrap;
+        text-transform: uppercase;
+        box-shadow: none !important;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+        line-height: 1em;
+    }
+    .filter-panel .filter-group-content .filter-level-title{
+        background-color: transparent;
+        border: none;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        margin-top: 0;
+        font-size: 13px;
+        padding-left: 0;
+        margin-right: 7px;
+        margin-bottom: 15px;
+        padding: 10px 0;
+        color: #4a4a4a;
+    }
+    .filter-panel .filter-group-content .label-wrapper .filter-text{
+        color: #008bcb;
+        font-size: 13px;
+    }
+    .filter-panel .filter-group-content .label-wrapper .filter-quantity{
+        color: #008bcb;
+        font-size: 13px;
+    }
+    .filter-panel .filter-group-content .filter-link{
+        margin:10px 0;
+        border-top: 1px solid #e1e1e1;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+        .filter-panel .filter-group-content .filter-link a{
+            font-size: 14px;
+            color: #008bcb;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+.blockpanel .section-name .inputbutton{
+    width: 140px;
+    height: 40px;
+    margin:10px;
+}
+
+.olflist {
+    margin-top: 20px;
+    border-top: 1px solid #e1e1e1;
+    display: block;
+    padding-top: 20px;
+}
+
+.olflist .listpanel {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+.olflist .listpanel .titlelinkoff {
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.olflist .listpanel .text {
+    padding-left:0;
+}
+
+.olflist .listpanel .metalink2 a {
+    padding-left: 0;
+}
+
+/*Id Specifics - Preferences Page*/
+
+/*#et-ef-content-ftf-outputText_InnerPage{
+    display: none;
+    visibility: hidden;
+}
+#et-ef-content-ftf-mastercontentpanel{
+    margin-left: 0;
+}
+    #et-ef-content-ftf-mastercontentpanel .columnfull{
+        border-right:none;
+    }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .descriptionpanel{
+            margin-left: 0;
+        }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .descriptionpanel p{
+                margin-left: 0;
+            }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .no-change-header #et-ef-content-ftf-gp-j_id_id16pc9-page_0-coverLetterBlock-outputText_coverLetter_title{
+            margin-left: 7px;
+        }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .descriptionpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_2-olfJobField-outputText_jobfieldsDescription{
+            visibility: hidden;
+            display: none;
+        }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_2-olfJobField-outputText_mandatory{
+            display: none;
+            visibility: hidden;
+        }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .tablelistindent{
+            margin-left: 7px;
+        }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .separatorpanel{
+            display: none;
+            visibility: hidden;
+        }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_2-olfJobField-commandButton_addJobField, #et-ef-content-ftf-gp-j_id_id16pc9-page_2-olfJobField-commandButton_reset_jobfield_selector{
+            visibility: hidden;
+            display: none;
+        }
+        #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .olflist .listpanel span{
+            padding-left: 0;
+            font-size: 15px;
+        }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .olflist .listpanel .no-change-header a .title{
+                font-weight: 700;
+                color:black;
+            }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .blockpanel .olflist .listpanel .metalink2 a{
+                padding-left: 0;
+                color: #008dc9;
+            }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .no-change-header span.titlepage{
+                margin-left: 30px;
+            }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .no-change-header .subtitle{
+                visibility: hidden;
+                display: none;
+            }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .no-change-header span#et-ef-content-ftf-gp-j_id_id16pc9-page_2-olfJobField-outputText_jobfieldsTitle{
+                display: none;
+                visibility: hidden;
+            }
+            #et-ef-content-ftf-mastercontentpanel .columnfull .no-change-header #et-ef-content-ftf-gp-j_id_id16pc9-page_2-olfJobField-menuHierarchy_jobfield_selector{
+                display: none;
+                visibility: hidden;
+            }
+        .mainsection #et-ef-content-ftf-footeraction{
+        }
+            .mainsection #et-ef-content-ftf-footeraction .footeractionpanel{
+                margin-top: 0;
+                padding-top: 30px;
+            }
+                .mainsection #et-ef-content-ftf-footeraction .footeractionpanel .buttonpanel-container .rightpanel #et-ef-content-ftf-outputText_InnerPageBottom{
+                    display: none;
+                    visibility: hidden;
+                }
+    #et-ef-content-ftf-mastercontentpanel .column165{
+        border-left: 1px solid #e1e1e1;
+    }
+    #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfBlockPanel{
+        border-top: 1px solid #e1e1e1;
+    }
+    #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-fc0{
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 30px;
+    }
+    #et-ef-content-ftf-mastercontentpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfBlockPanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-fc0 .custom-form-columns .entity-block select{
+        background: none;
+        background-color: #f5f5f5;
+        color: #4a4a4a !important;
+    }
+        #et-ef-content-ftf-mastercontentpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfBlockPanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-fc0 .custom-form-columns .entity-block select#et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-dv_cs_basicprofile_EmployeeStatus, #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-dv_cs_basicprofile_JobTypes, #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-dv_cs_basicprofile_JobLevels, #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-dv_cs_basicprofile_JobSchedules{
+            height: 160px !important;
+            margin-bottom: 40px;
+        }
+        #et-ef-content-ftf-mastercontentpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfBlockPanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-fc0 .custom-form-columns .entity-block select option{
+            color: #4a4a4a;
+            height: 30px;
+            padding-top: 13px;
+            margin-bottom: 10px;
+        }
+            #et-ef-content-ftf-mastercontentpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfBlockPanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-cfrm-cfrmsub-frm-fc0 .custom-form-columns .entity-block select option:checked{
+                color: #ffffff;
+                background: #3fb1e2;
+                background: -moz-linear-gradient(top, #3fb1e2 0%, #008dc9 100%); /* FF3.6-15
+                background: -webkit-linear-gradient(top, #3fb1e2 0%,#008dc9 100%); /* Chrome10-25,Safari5.1-6
+                background: linear-gradient(to bottom, #3fb1e2 0%,#008dc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb1e2', endColorstr='#008dc9',GradientType=0 );
+                border-radius: 5px;
+                padding-top: 13px;
+                padding-left: 10px;
+                height: 30px;
+                width: 93%;
+            }*/
+    /*#et-ef-content-ftf-mastercontentpanel .blockpanel{
+        /*width: 100%;
+        margin-left: 30px;
+    }
+    #et-ef-content-ftf-mastercontentpanel .blockpanel #et-ef-content-ftf-gp-j_id_id16pc9-page_1-sourceTrackingBlock-mainsection .inputselectpanel{
+        margin-bottom: 20px;
+    }*/
+/* Id Specifics - Questions Page */
+
+#et-ef-content-ftf-mastercontentpanel .blockpanel .questionnaire fieldset.fs-508 {
+
+}
+
+#et-ef-content-ftf-mastercontentpanel .blockpanel .questionnaire fieldset.fs-508:first-child{
+    margin-top: 50px;
+}
+#et-ef-content-ftf-mastercontentpanel .blockpanel .questionnaire fieldset.fs-508{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+    #et-ef-content-ftf-mastercontentpanel .blockpanel .questionnaire fieldset.fs-508 legend label{
+        font-weight: 700;
+    }
+    #et-ef-content-ftf-mastercontentpanel .blockpanel .questionnaire fieldset.fs-508 .fs-508-block{
+        margin-left: 20px;
+    }
+    #et-ef-content-ftf-mastercontentpanel .blockpanel .inputtextgrouppanel .entity-label{
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+#et-ef-content-ftf-mastercontentpanel #et-ef-content-ftf-errorMessages{
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#et-ef-content-ftf-mastercontentpanel #et-ef-content-ftf-errorMessages h1 {
+    margin: 0 !important;
+}
+
+/* Id Specifics - Cover Letter */
+
+#et-ef-content-ftf-mastercontentpanel .blockpanel .inputtextgrouppanel #et-ef-content-ftf-gp-j_id_id16pc9-page_0-coverLetterBlock-coverLetter{
+    width: 90%;
+    height: 270px;
+    background-color: #f5f5f5;
+    resize:none;
+    border-color: #959595;
+    margin-left: 0;
+}
+#et-ef-content-ftf-mastercontentpanel .column165 .helppanel .blockhelppanel h3 .helptitle{
+    margin-bottom: 0;
+}
+#et-ef-content-ftf-mastercontentpanel .column165 .helppanel .blockhelppanel .helplabel{
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+#et-ef-content-ftf-mastercontentpanel .column165 .helppanel .blockhelppanel .helplabel#et-ef-content-ftf-gp-itHelp-0-itHelpGroup-1-itDesc-0-helpDesc{
+    margin-bottom: 0;
+}
+
+
+/* Id Specifics - Review And Submit */
+#et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .descriptionpanel,
+#printableFormat .summary .tablelist .columnfull .descriptionpanel{
+    margin-bottom: 70px;
+}
+#et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel,
+#printableFormat .summary .tablelist .columnfull .blockpanel{
+    background-color: #f5f5f5;
+    border-color: #e6e5e5;
+    border-radius: 5px;
+}
+    #et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel .headerblockpanel,
+    #printableFormat .summary .tablelist .columnfull .blockpanel .headerblockpanel{
+        background: #f4f4f4; /* Old browsers */
+        background: -moz-linear-gradient(top, #f4f4f4 0%, #dedede 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #f4f4f4 0%,#dedede 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #f4f4f4 0%,#dedede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#dedede',GradientType=0 );
+        border: 1px solid #e6e5e5;
+        border-radius: 5px;
+        margin-top: -55px;
+    }
+    #et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel .groupcontentpanel,
+    #printableFormat .summary .tablelist .columnfull .blockpanel .groupcontentpanel{
+        margin-top: 35px;
+    }
+        #et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .subtitleblockpanel .no-change-header .subtitleblock,
+        #printableFormat .summary .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .subtitleblockpanel .no-change-header .subtitleblock{
+            margin-left: 8px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        #et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .table .firstcolumn .labelpanel,
+        #printableFormat .summary .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .table .firstcolumn .labelpanel{
+            margin-left: 18px;
+        }
+            #et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .table .firstcolumn .labelpanel .label,
+            #printableFormat .summary .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .table .firstcolumn .labelpanel .label {
+                font-weight: 400;
+            }
+    #et-ef-content-ftf-mastercontentpanel .summary .tablelist .columnfull .blockpanel,
+    #printableFormat .summary .tablelist .columnfull .blockpanel{
+        margin-bottom: 75px;
+    }
+
+
+#et-ef-content-ftf-mastercontentpanel .summary .tablelist .messagewarningpanel,
+#printableFormat .summary .tablelist .messagewarningpanel {
+    background: transparent;
+    border: 0;
+    padding: 0 !important;
+    margin: 0 0 0 20px !important;
+}
+
+#et-ef-content-ftf-mastercontentpanel .summary .tablelist .messagewarningpanel label,
+#printableFormat .summary .tablelist .messagewarningpanel label {
+    display: none;
+}
+
+/* Page Specifics - Tasks */
+
+.processesTaskMainDiv .message-list-content .presentation .taskSelector h2 {
+    padding-left: 0;
+    color: #008dc9;
+    font-weight: bold;
+}
+
+#task_progressBar, .progress-bar {
+    margin:0;
+}
+
+.processesTaskMainDiv .message-list-content .presentation .taskSelector .progress-bar tbody {
+
+}
+
+.processesTaskMainDiv .message-list-content .presentation .taskSelector .processTasks .processesNotSelectedTaskItem{
+    margin-bottom: 20px;
+}
+.processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel{
+    border:none !important;
+    margin: 0;
+    padding-left: 25px;
+    width: 714px !important;
+}
+
+    .processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel .processesTaskTitle {
+        padding: 10px 0 10px 25px;
+    }
+
+    .processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel .processesTaskTitleJob h1 {
+        margin: 0 !important;
+    }
+
+    .processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel .page-header {
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel .page-header br {
+        display: none;
+    }
+
+    .processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel .blockpanel{
+        max-width: none;
+        width: 100%;
+    }
+        .processesTaskMainDiv .message-list-content .mainsection .processesTaskTable .taskPanel .blockpanel .page-header div{
+            background: #f5f5f5;
+            border: 1px solid #e5e5e5 !important;
+            border-radius: 5px;
+            text-shadow: none;
+        }
+
+        .blockpanel .page-header-titleb {
+            color: #555555;
+        }
+
+    .processTasks{
+        margin-top: 22px;
+    }
+        .processTasks .processesNotSelectedTaskItem td{
+            background-color: #f5f5f5;
+            border: 1px solid #e6e5e5;
+            border-radius: 5px;
+        }
+        .processTasks .processesNotSelectedTaskItem td a div .processes-task-link{
+            color: #008dc9;
+        }
+
+    .taskSelector > .who-progress-bar {
+        padding: 10px;
+        border: 1px solid #e6e5e5;
+        background: #f5f5f5;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+
+    .taskSelector > .who-progress-bar .no-change-header {
+        margin-top:0;
+    }
+
+    .taskSelector table.processTasks {
+        border-spacing: 0 15px !important;
+        margin-top: 0 !important;
+    }
+
+
+
+    .processTasks .processesSelectedTaskItem td{
+        background: #f2a36c; /* Old browsers */
+        background: -moz-linear-gradient(top, #f2a36c 0%, #e47b33 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #f2a36c 0%,#e47b33 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #f2a36c 0%,#e47b33 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2a36c', endColorstr='#e47b33',GradientType=0 );
+        border-radius: 5px !important;
+    }
+.taskPanel .blockpanel .task-content{
+    border:1px solid #e6e5e5;
+    border-radius: 5px;
+    margin-top:25px;
+    background: #f5f5f5;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    width: 714px;
+    overflow: scroll;
+}
+    .taskPanel .blockpanel .task-content div{
+       margin-left: 0px;
+       background: none;
+    }
+        .taskPanel .blockpanel .task-content div h2{
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    .taskPanel .blockpanel .task-content table{
+        width: 100%;
+        padding:0;
+    }
+    .taskPanel .blockpanel #processlistTemplate-list-myProcessesViewContent-formTask-editTemplate-contentPane .task-content .block-main-border .entity-mandatory-field{
+        margin-left: 0;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .taskPanel .blockpanel .task-content .block-main-border .entity-indent{
+        margin-left: 0;
+    }
+        .taskPanel .blockpanel .task-content .block-main-border .entity-indent .custom-form-columns .entity-block{
+            margin-top: 15px;
+        }
+        .taskPanel .blockpanel .task-content .block-main-border .entity-indent .output-text.entity-value h1{
+            margin-bottom: 10px;
+        }
+            .taskPanel .blockpanel .task-content .block-main-border .entity-indent .custom-form-columns .output-text.entity-value h1 span{
+                font-size: 16px !important;
+                margin-bottom: 5px;
+            }
+    .taskPanel .blockpanel .task-content .button-group-left-bottom{
+        margin:0;
+    }
+        .taskPanel .blockpanel .task-content .button-group-left-bottom .inputbutton{
+            margin:0;
+            height: 40px;
+            width: 140px;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        .taskPanel .blockpanel #processlistTemplate-list-myProcessesViewContent-formTask-editTemplate-contentPane .task-content .button-group-left-bottom .metalink2 a{
+            color: #008dc9;
+            margin-right: 10px;
+        }
+
+        .taskPanel .blockpanel .task-content .custom-form-columns span {
+            width: auto !important;
+        }
+
+.masterbody .mainsection #mySubmissionsInterface .mastercontentpanel2{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mainsection #mySubmissionsInterface .mastercontentpanel2 .columnfull .resultstitlepanel h1 span{
+    display: none;
+    visibility: hidden;
+}
+.mainsection #mySavedSearchesInterface\.ID1606\.row .resultstitlepanel h1 .subtitle{
+    display: none;
+    visibility: hidden;
+}
+.mainsection #mySavedSearchesInterface\.ID1606\.row .messagenotepanel{
+    background-color: transparent;
+    border: none;
+}
+.mainsection #mySavedSearchesInterface\.ID1606\.row .tablelist{
+    border:1px solid #e1e1e1;
+    background-color: #f5f5f5;
+    padding:10px 30px;
+    border-radius: 5px;
+}
+
+.mainsection #mySavedSearchesInterface\.ID1606\.row .legendpanel .tablelist {
+    border: 0;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+    .mainsection #mySavedSearchesInterface\.ID1606\.row .tablelist .contentlinepanel h2 span a{
+        color: #008bcb;
+    }
+    .mainsection #mySavedSearchesInterface\.ID1606\.row .tablelist .contentlinepanel span a{
+        color: #008bcb;
+    }
+    .mainsection .ftlrow#mySavedSearchesInterface\.ID1606\.row .tablelist .contentlinepanel{
+        border-bottom: 1px solid #e1e1e1;
+    }
+.mastercontentpanel2 .ftlrow .column165 .helppanel{
+    margin-top: 68px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.masterbody #topNavInterface.headersection #topNavInterface\.Header .link2panel{
+    background: #1f9fd5;
+    background: -moz-linear-gradient(top, #17a1dc 0%, #008dc9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #17a1dc 0%,#008dc9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #17a1dc 0%,#008dc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a1dc', endColorstr='#008dc9',GradientType=0 );
+    width: 964px;
+    border-radius: 6px;
+    border: 0;
+    margin: 0 30px;
+}
+    .masterbody .link2panel .separatorlink2{
+        display: none;
+    }
+
+    .masterbody #topNavInterface .link2panel li {
+        margin:20px;
+        margin-left: 30px;
+        padding-top: 10px;
+        height: 25px;
+        width: 186px;
+        text-align: center;
+        padding: 10px 5px 5px;
+    }
+
+    .masterbody #topNavInterface .link2panel .selectedlink2{
+        background: #fff;
+        background: -moz-linear-gradient(top, #fff 0%, #cfcfcf 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #fff 0%,#cfcfcf 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #fff 0%,#cfcfcf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a1dc', endColorstr='#cfcfcf',GradientType=0 );
+    }
+
+    .masterbody #topNavInterface .link2panel .link2{
+        border:1px solid #fff;
+        background: transparent;
+        border-radius: 5px;
+    }
+        #topNavInterface\.tabBasicReqSearch{
+            background-color: transparent;
+            border:none;
+        }
+
+        .masterbody #topNavInterface .link2panel .selectedlink2 span{
+            color: #555;
+            font-size: 15px;
+        }
+
+        .masterbody #topNavInterface #topNavInterface\.tabMyJobCart{
+            display: none;
+        }
+        .masterbody #topNavInterface .link2panel .link2 a{
+            color: #fff;
+            font-size: 15px;
+        }
+            .masterbody #topNavInterface .link2panel .link2 a:hover{
+                color: none;
+                background:transparent;
+            }
+
+    .mastercontentpanel2 .ftlrow{
+        width: 100%;
+    }
+        .ftlrow .columnfull{
+            border:none;
+            background:none;
+        }
+        #mySubmissionsInterface\.applicationList{
+            background-color:#f5f5f5;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+        }
+        .ftlcopy.ftlgroup .statuspanel{
+            border:none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .ftlcopy.ftlgroup .statuspanel h2 span {
+            font-size: 18px;
+        }
+
+        .iconcontentpanel{
+            border-bottom:1px solid #e1e1e1;
+            width:90% !important;
+        }
+        .mastercontentpanel2 .tablelist{
+            width: 100%;
+        }
+        .mastercontentpanel2 .ftlrow .column165 .helppanel{
+            border:none !important;
+            margin-left: 20px;
+            width: 90%;
+        }
+            .mastercontentpanel2 .ftlrow .column165 .helppanel > div{
+                border: 1px solid #e6e5e5;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+                padding-bottom: 20px;
+            }
+                .mastercontentpanel2 .ftlrow .column165 .helppanel div .helplink {
+                    padding: 0 28px !important;
+                    display: block;
+                    margin: 0 !important;
+                }
+
+                .mastercontentpanel2 .ftlrow .column165 .helppanel div .helplink a{
+                    /*DA-PLACEHOLDER*/
+                    text-align: center;
+                    color: #fff;
+                    font-size: 13px;
+                    height: 40px;
+                    padding-top: 12px;
+                    margin: 0;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+                    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+                    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+                    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+                    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+                    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+                    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+                    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+                    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+                    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+                    background-color:#008dc9;
+                    border:1px solid #124d77;
+                }
+
+                    .mastercontentpanel2 .ftlrow .column165 .helppanel div .helplink a:hover{
+                        -moz-box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+                        -webkit-box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+                        box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+                        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+                        background:-moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                        background:-webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                        background:-o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                        background:-ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+                        background:linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+                        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33',GradientType=0);
+                        background-color:#f2a46c;
+                        border:1px solid #fd9143;
+                        text-shadow:0px 1px 0px #db610f;
+                    }
+
+
+                .mastercontentpanel2 .ftlrow .column165 .helppanel div .contentlabelpanel span{
+                    margin: 10px 20px;
+                    padding: 0;
+                    font-size: 11px;
+                }
+                .mastercontentpanel2 .ftlrow .column165 .helppanel div h2 span{
+                    font-weight: 700;
+                    margin:10px 10px;
+                }
+            .mastercontentpanel2 .ftlrow .column165 .helppanel div.legendpanel{
+                padding:0;
+                margin-top: 0;
+            }
+
+            .mastercontentpanel2 .ftlrow .column165 .helppanel div.legendpanel .iconpanel {
+                text-align: left;
+                width: 10%;
+                padding-top: 5px;
+            }
+                .mastercontentpanel2 .ftlrow .column165 .helppanel div.legendpanel h2 span{
+                    font-weight: 700;
+                    margin:10px 20px;
+                }
+                .mastercontentpanel2 .ftlrow .column165 .helppanel div.legendpanel table{
+                    margin-left: 15px;
+                    margin-bottom: 10px;
+                }
+
+            .mastercontentpanel2 .ftlrow .column165 .helppanel > h2 {
+                margin-top: 20px;
+                background-color: #f5f5f5;
+                border: 1px solid #e6e5e5;
+                border-radius: 5px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom: 0;
+            }
+
+            .mastercontentpanel2 .ftlrow .column165 .helppanel > h2 span {
+                margin: 10px 10px 0;
+                font-weight: bold;
+            }
+
+            .mastercontentpanel2 .ftlrow .column165 .helppanel > .contentlabelpanel {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-top: 0;
+            }
+
+            .mastercontentpanel2 .ftlrow .column165 .helppanel > .contentlabelpanel span {
+                margin: 0 10px;
+                padding-top: 15px;
+            }
+
+#mySubmissionsInterface\.ID1652\.row .column165 .helppanel{
+    margin-top: 95px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#mySubmissionsInterface\.pagerDivID1826{
+    margin-left: 0;
+}
+
+#mySubmissionsInterface\.applicationList .ftlcopy.ftlrow .iconcontentpanel .jobtitlepanel .inlinepanel{
+    display: none;
+}
+#mySubmissionsInterface\.applicationList .ftlcopy.ftlrow .iconcontentpanel .jobcontentpanel .metalink2 a{
+    color: #008bcb;
+}
+#mySubmissionsInterface\.applicationList .ftlcopy.ftlrow .iconcontentpanel .jobtitlepanel h2 .titlelink a{
+    color: #008bcb;
+}
+#mySubmissionsInterface\.ID1652\.row
+#mySubmissionsInterface\.ID2608\.row .iconpanel{
+    width: 8%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+/* Id Percifics - My Account Page */
+
+.myaccount {
+    display: block;
+    padding: 20px 30px;
+}
+
+.mainsection .myaccount {
+    padding: 20px 0;
+}
+
+.myaccount .tablelistindent .inputcheckbox {
+    margin: 5px 10px 0 0 !important;
+}
+
+.myaccount .tablelistindent .entity-checkbox-label {
+    font-size: 14px;
+}
+
+.myaccount .blockpanel .blockpaneledit {
+    padding: 0;
+}
+
+.mainsection .myaccount .columnfull h1.no-change-header {
+    margin: 0;
+}
+
+.mainsection .myaccount .columnfull h1.no-change-header span{
+    font-size: 18px;
+}
+
+.myaccount .buttonpanel {
+    margin: 0 0 30px 0;
+}
+
+.myaccount .buttonpanel input {
+    background-color:#008dc9;
+    border:1px solid #124d77;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    min-width: 140px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+
+.myaccount .descriptionpanel{
+  margin-bottom:30px;
+}
+
+.myaccount .columnfull {
+    border: 0;
+}
+
+.myaccount .inputtext300 {
+    margin-bottom: 20px;
+    display:block;
+}
+
+.myaccount .tablelist .columnfull .blockpanel{
+  border:none;
+}
+  .myaccount .tablelist .columnfull .blockpanel .table{
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius:10px;
+  }
+  .myaccount .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .groupcontentpanel .contentblockpanel .table:first-child{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+  }
+  .myaccount .tablelist .columnfull .blockpanel .groupcontentpanel .contentblockpanel .groupcontentpanel .contentblockpanel .table:last-child{
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+  }
+
+  .myaccount .tablelist .columnfull .blockpanel .groupcontentpanel .headerblockpanel{
+    border:1px solid #e1e1e1;
+    border-radius:10px;
+  }
+
+  .myaccount .tablelist .columnfull .blockpanel .headerblockpanel{
+    border:1px solid #e1e1e1;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, #cfcfcf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff 0%,#cfcfcf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff 0%,#cfcfcf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a1dc', endColorstr='#cfcfcf',GradientType=0 );
+    border-radius:10px;
+  }
+
+  .myaccount .tablelist .columnfull .blockpanel .no-change-header .headerblockpanel{
+    border:1px solid #e1e1e1;
+    border-radius:10px;
+  }
+
+/* Job Views - Id Specifics */
+
+#requisitionDescriptionInterface\.backAction{
+  color:#008BCB;
+}
+
+#requisitionDescriptionInterface\.ID1283\.row1{
+  float:right;
+}
+
+#requisitionDescriptionInterface\.ID3150\.row\.row1 .column165{
+  display:none;
+}
+  #requisitionDescriptionInterface\.ID3150\.row\.row1 .columnfull .editablesection div{
+    margin-left:21px;
+  }
+#requisitionDescriptionInterface\.ID2864\.row .columnfull{
+  border:none;
+}
+
+#requisitionDescriptionInterface\.buttongrouppanelTop\.row1{
+    padding-top: 20px;
+    padding-bottom:30px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#requisitionDescriptionInterface\.buttongrouppanelTop\.row1 img {
+    width: 178px !important;
+    height: 25px !important;
+}
+
+#requisitionDescriptionInterface\.UP_APPLY_ON_REQ\.row1{
+  width:143px;
+  height:40px;
+  font-size:13px;
+  margin-left: 0;
+}
+
+.columnfull h1 div{
+  display:none;
+}
+
+    .editablesection .contentlinepanel .subtitle{
+        font-weight: 700;
+    }
+    .editablesection .contentlinepanel span{
+        margin-left:0;
+    }
+    .editablesection .contentlinepanel .text h4{
+        margin:10px 0;
+    }
+
+#requisitionDescriptionInterface\.buttongrouppanelBottom\.row1{
+  margin: 20px 0 0;
+  border-top:1px solid #e1e1e1;
+  padding-top: 30px;
+  margin-top:20px;
+}
+#requisitionDescriptionInterface\.buttongrouppanelBottom\.row1 img {
+    width: 178px !important;
+    height: 25px !important;
+}
+
+
+#_cs_addthis_requisitionDescriptionInterface\.UP_ADDTHIS\.row1{
+    float: right;
+}
+#_cs_addthis_requisitionDescriptionInterface\.BOTTOM_ADDTHIS\.row1{
+  float:right;
+  margin-top: 10px;
+}
+
+.editablesection .contentlinepanel span{
+  margin:0;
+}
+
+#requisitionDescriptionInterface\.buttongrouppanelBottom\.row1 div .inputbutton{
+  height:40px;
+  width:150px !important;
+  text-align:center;
+  margin-left: 0;
+  font-size: 13px;
+}
+
+/* Id Specifics - Personal Information */
+
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-fc89 fieldset .fs-508-inline{
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+/* Id Specifics - 2nd Preferences */
+
+/*.subtitle .no-change-header #et-ef-content-ftf-gp-j_id_id16pc9-page_0-olfLocation-outputText_tab_name{
+  font-weight:700;
+  font-size:18px;
+}
+
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-olfLocation-menuHierarchy_location_selector div{
+  display:inline !important;
+  visibility:visible !important;
+}
+    #et-ef-content-ftf-gp-j_id_id16pc9-page_0-olfLocation-menuHierarchy_location_selector div #et-ef-content-ftf-gp-j_id_id16pc9-page_0-olfLocation-menuHierarchy_location_selector-0{
+        border:1px solid #dfdfdf;
+        height: 40px;
+        background:  #fff url('../images/button.png') no-repeat;
+        background-position: left;
+        background-size: cover;
+        color: #1f9fd5 !important;
+        border-radius: 0;
+        box-shadow: none;
+    }
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-olfLocation-niceCommandButton_addLocation{
+  height:40px;
+  width:150px;
+  font-size:14px;
+  margin-left:0;
+  margin-right:16px;
+  margin-bottom:20px;
+}
+#et-ef-content-ftf-gp-j_id_id16pc9-page_0-olfLocation-niceCommandButton_reset_location_selector{
+  height:40px;
+  width:150px;
+  font-size:14px;
+  margin-bottom:20px;
+  margin-left: 0;
+}*/
+
+/* Sign Out Top Banner - Id Specifics */
+
+#header-actions-signed-in .toggle-button-header.username-button{
+    background: url(../images/white-arrow.png) no-repeat center right;
+}
+
+#header-actions-signed-out #signin-link{
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Job Search - Dropdowns - Id Specifics */
+#jobsTableContainer #jobs{
+  width:97%;
+  margin-left:3%;
+  background-color: #f5f5f5;
+  border-radius: 10px !important;
+}
+
+#jobs .headers.subtitle{
+  border:1px solid #e1e1e1;
+}
+#jobs .even{
+  background-color:#e1e1e1;
+}
+
+.headers.subtitle th{
+  font-weight:700;
+}
+
+#jobs tbody tr .actions .actions-container .result-list-button{
+  background:transparent;
+  color:black;
+}
+
+
+#advanced-search-panel-container{
+    background: #f5f5f5; /* Old browsers */
+    border: 1px solid #ebebeb;
+    border-radius:5px;
+}
+
+#advanced-search-padding-panel {
+    padding: 25px 40px;
+}
+
+#advanced-search-padding-panel .advanced-search-top-panel .advanced-search-title{
+  font-weight:normal;
+  color: #008dc9;
+}
+#advanced-search-padding-panel .advanced-search-criteria .advanced-search-row .olf-widget .widget-title{
+  font-weight:bold;
+  color: #008BCB;
+}
+
+#advanced-search-padding-panel .advanced-search-criteria .advanced-search-row .olf-widget .add-olf-link a{
+  color:#008BCB;
+  font-weight:normal;
+}
+
+#advanced-search-padding-panel .advanced-search-criteria .advanced-search-row .criteria-widget .widget-title {
+    color: #02364d;
+}
+
+#advanced-search-padding-panel .advanced-search-criteria .advanced-search-row .criteria-widget .criteria-options .criteria-label-wrapper{
+    color: #008BCB;
+}
+
+#advanced-search-padding-panel .advanced-search-criteria .advanced-search-row .criteria-widget input[type="text"] {
+    background: #fff;
+    margin: 0 10px 10px 0;
+}
+
+#advanced-search-padding-pane .olf-autocomplete-field input {
+    margin-bottom: 5px;
+}
+
+#advanced-search-padding-panel #advanced-search-buttons-container input {
+    width: 68px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+#advanced-search-padding-panel #advanced-search-buttons-container #clear-advanced-search-criteria{
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    color: #acacac;
+}
+#advanced-search-padding-panel #advanced-search-buttons-container #advanced-search-button{
+    background-image:none;
+    height:33px !important;
+    border:1px solid #e1e1e1;
+    margin-right:-60px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+    background-color:#008dc9;
+    border:1px solid #124d77;
+    color: #fff;
+}
+#advanced-search-padding-panel #advanced-search-buttons-container:after{
+    color:#fff;
+    content:"Submit";
+    font-size:14px;
+    pointer-events: none;
+}
+
+/* Tasks Page 2 - Id Specifics */
+.processesTaskMainDiv{
+    border: none;
+    margin-top:0;
+    border-radius: 10px;
+    padding: 20px 30px;
+    overflow: visible;
+}
+
+.processesTaskMainDiv .message-list-content .descriptionpanel > span {
+    padding-left: 0;
+    font-size: 13px;
+}
+
+.processesTaskMainDiv #processlistTemplate-list-processListContent-outputText_title{
+    font-size: 20px;
+}
+.processesTaskMainDiv .processes-table-link {
+    margin: 10px 0;
+}
+
+.processesTaskMainDiv .processes-table-link .processesTaskLink .headerProcessProcessTilte div{
+  margin:0;
+}
+.processesTaskMainDiv .processes-table-link .processesTaskLink .headerProcessProcessTilte{
+    width: 50%;
+}
+.processesTaskMainDiv .processes-table-link .processesTaskLink .headerProcessProcessTilte a span{
+  color: #008bcb;
+  font-weight:700;
+  font-size: 18px;
+}
+
+.processesTaskLinkGroup table{
+    border-top: 0;
+    border-bottom:1px solid #e1e1e1;
+}
+
+.processesTaskLinkGroup table .headerProcessTaskCompletion {
+    width: 30%;
+    text-align: center;
+}
+
+.processesTaskLinkGroup table .headerProcessTaskCompletion > span {
+    float:none;
+}
+
+.processesTaskLinkGroup table .headerProcessTaskCompletionBar {
+    width: 20%;
+    height: 21px;
+    padding-bottom: 10px;
+}
+
+.progress-bar {
+    background: #ebebeb !important;
+    border: 1px solid #aaaaaa !important;
+    border-collapse: collapse;
+}
+
+.progress-bar td {
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.progress-bar td:last-child {
+    border: none !important;
+}
+
+.progress-bar .progress-bar-cell-filled {
+    background-color: #2faa40 !important;
+    background-image: none;
+    border-right:1px solid #e2e1e1 !important;
+}
+
+
+#processlistTemplate-list-myProcessesViewContent-outputText_back_process{
+    display: none;
+}
+.skipLink{
+    color: #008dc9;
+}
+/* Save This Search */
+
+#jobsTableContainer #jobs{
+  width:97%;
+  margin-left:3%;
+  background-color: #f5f5f5;
+  border-radius: 10px !important;
+}
+
+#jobs .headers.subtitle{
+  border:1px solid #e1e1e1;
+}
+#jobs .even{
+  background-color:#e1e1e1;
+}
+
+.headers.subtitle th{
+  font-weight:700;
+}
+
+#jobs tbody tr .actions .actions-container .result-list-button{
+  background:transparent;
+  color:black;
+}
+
+#saveSearchPanel{
+  width:100%;
+  border:none;
+  padding: 0 20px 10px 20px;
+}
+#saveSearchPanel .close-button-container {
+  margin:0;
+  text-align:center;
+  top:0;
+  right:10px
+}
+#saveSearchPanel .input-panel{
+  width:66%;
+}
+
+#saveSearchPanel .input-panel .text {
+    display: block;
+    padding-bottom: 10px;
+}
+
+#saveSearchPanel .input-panel .text label{
+    font-weight: bold;
+}
+
+#saveSearchPanel .input-panel input#saveSearchTitle{
+    margin-left:0;
+    width:222px;
+    height:32px;
+    float:left;
+    margin-right:10px;
+}
+
+#saveSearchPanel .input-panel a#saveSearchSave.result-list-button{
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+    box-sizing: border-box;
+    float:left;
+    color:black;
+    height: 33px;
+    text-align: center;
+    padding: 10px 15px 5px 15px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+#saveSearchPanel .input-panel .metalink2{
+  width:75px;
+  float:left;
+  margin-left:10px;
+  text-align:center;
+  display: block;
+}
+#saveSearchPanel .input-panel .metalink2 a{
+    margin:0;
+    font-weight:normal;
+    font-size:12px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #d7d7d7;
+    color: #acacac !important;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 33px;
+    text-align: center;
+    padding: 10px 15px 5px 15px;
+    display: block;
+    line-height: 13px;
+}
+
+#saveSearchPanel .list-link-panel.metalink2 {
+    float:left;
+    width:27%;
+    margin-top:26px;
+    padding: 0;
+    text-align:center;
+    display: block;
+}
+#saveSearchPanel .list-link-panel.metalink2 a{
+    /*jdaf*/
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+    background-color:#008dc9;
+    color: #fff !important;
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 33px;
+    text-align: center;
+    padding: 10px 13px 5px 12px;
+    line-height: 13px;
+    text-align:center;
+    margin: 0;
+    font-weight:normal;
+    border-radius: 5px;
+  }
+
+#saveSearchPanel #saveSearchDescription{
+}
+
+#closeButton{
+  float:left;
+}
+/* Page - Forgot Password */
+.block-main-border-fix .dialog-columns table{
+    width: 100%;
+}
+
+.block-main-border-fix  .dialog-columns label.entity-label{
+    float: left;
+    width: 180px;
+    clear:left;
+}
+
+.block-main-border-fix  .dialog-colum input {
+    margin: 0;
+}
+
+/* Filter Search */
+
+#resultListPanel #filterTopPanel{
+  width: 99%;
+  margin-left:2%;
+  background-color:transparent;
+  margin-bottom:10px;
+}
+
+  #resultListPanel #filterTopPanel .filter-top-panel #filterList li{
+    color:#707070;
+  }
+    #resultListPanel #filterTopPanel .filter-top-panel #filterList li input{
+      margin:2px 0 0 6px;
+      padding:0;
+      height:10px;
+      width:10px;
+    }
+
+#filterTopPanel .clear-top-filter.metalink2 a{
+  color:#707070;
+  margin-right:10px;
+  padding:0;
+}
+
+/* Offers Page - Id Specifics */
+#offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel h1 .titlepage{
+    margin-left: 0;
+    font-weight: bold;
+}
+
+#offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel h2 .title{
+    margin-left:0;
+    font-weight :normal;
+    font-size: 13px;
+}
+#offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel h1{
+    margin-bottom: 10px;
+}
+#offersTemplate-offerForm-masterbody .blockpanel {
+    margin: 0 0 25px !important;
+}
+
+#offersTemplate-offerForm-masterbody .buttonpanel {
+    margin-top: 15px !important;
+    text-align: left !important;
+}
+
+#offersTemplate-offerForm-masterbody .buttonpanel a {
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #008dc9), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #008dc9 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #008dc9 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dc9', endColorstr='#0061a7',GradientType=0);
+    background-color:#008dc9;
+    border:1px solid #124d77;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff !important;
+    padding: 5px 20px;
+    width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+#offersTemplate-offerForm-masterbody .buttonpanel a span {
+    color: #fff !important;
+    margin: 0 !important;
+    text-align: center;
+}
+
+#offersTemplate-offerForm-masterbody .buttonpanel a:hover {
+    box-shadow:inset 0px 1px 0px 0px #ffcaa6;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2a46c), color-stop(1, #e47a33));
+    background:-moz-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:-webkit-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:-o-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:-ms-linear-gradient(top, #f2a46c 5%, #e47a33 100%);
+    background:linear-gradient(to bottom, #f2a46c 5%, #e47a33 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2a46c', endColorstr='#e47a33',GradientType=0);
+    background-color:#f2a46c;
+    text-shadow:0px 1px 0px #db610f;
+    border:1px solid #fd9143;
+}
+
+.rightpanel{
+  float:right;
+  margin-top:15px;
+}
+  #offersTemplate-offerForm-flowHeader-logoutAction{
+  color:#fff;
+}
+
+.StaticEOffer .mainsection .mastercontentpanel .no-change-header .titlepage{
+  margin-left:17px;
+}
+.userpanel .metalink #topNavInterface\.myAccountAction{
+    margin-right: 20px;
+}
+.StaticEOffer .mainsection .mastercontentpanel h2.no-change-header .title{
+  margin-left:17px;
+}
+.StaticEOffer .mainsection .mastercontentpanel .blockpanel .entity-block{
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.blockpanel.selectlist .fs-508 .fs-508-block .fs-508-label{
+  margin-left:5px
+}
+
+.metalink #processlistTemplate-list-flowHeader-logoutAction{
+    color:#fff;
+}
+.metalink #et-ef-content-flowTemplate-flowHeader-logoutAction{
+    color:#fff;
+}
+
+#offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel h1{
+    margin-bottom: 10px;
+}
+#offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel h2 {
+    font-weight: normal;
+    font-size: 13px !important;
+}
+
+#offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel .offerList{
+    margin: 20px 0 0 0;
+}
+  #offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel .offerList li{
+    margin: 0 20px 20px 0;
+  }
+    #offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel .offerList li a{
+        border:1px solid #e1e1e1;
+        background-color: #f5f5f5;
+        background-image: none;
+        color: #333;
+        font-size: 12px;
+        padding-bottom: 18px;
+    }
+    #offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel .offerList li .offerImage {
+        display: none;
+    }
+
+      #offersTemplate-offerForm-masterbody .mainsection .mastercontentpanel .offerList li a .list-column-link{
+        color: #008dc9;
+        text-shadow:none;
+        font-size: 18px;
+      }
+/* Checkboxes */
+.checkbox-unchecked {
+    background-image:url('../images/tick-box.png');
+}
+.checkbox-checked {
+    background-image:url('../images/tick-box-ticked.png');
+}
+
+.checkboxp.checkbox-unchecked,
+.checkboxp.checkbox-unchecked.checkbox-checked{
+    padding-right: 5px;
+}
+
+.checkbox-label{
+    margin-bottom: 10px;
+}
+
+/* e-Signature */
+.blockpanel .iframepanel{
+    padding:10px;
+}
+
+#noResults {
+    margin-left: 20px;
+}
+
+.messagewarningpanel {
+    padding: 15px !important;
+    background: #D8EFFA;
+    border-radius: 5px;
+}
+
+.show-more-link {
+    color: #008BCB;
+}
+
+/* adverts */
+
+.requisitionDescription {
+    line-height: 1.6em;
+}
+
+.requisitionDescription .titlepage {
+    color: #008BCB !important;
+}
+
+.requisitionDescription h2 {
+   color: #008BCB;
+    font-size: 1.4em;
+    margin: 0.83em 0;
+}
+
+.requisitionDescription h3 {
+    color: #008BCB;
+    font-size: 1.2em;
+    margin: 1em 0;
+    display: block;
+}
+
+.requisitionDescription font {
+    font-family: 'HelveticaNeueW01-55Roma','Helvetica Neue W01 55 Roman','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    font-size: inherit !important;
+}
+
+.requisitionDescription a {
+    font-size: inherit !important;
+}
+
+.requisitionDescription p {
+    margin: 0.5em 0 !important;
+    line-height: 1.5em !important;
+}
+
+.requisitionDescription b {
+   color: #008BCB;
+}
+
+#printableFormat {
+    background: #fff;
+}
+
+#instructions-link {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    background-image: url('../images/download.png');
+    background-repeat: no-repeat;
+    background-position: left 10%;
+}
+
+#instructions-link span {
+    margin-left: 26px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #008bcb;
+}

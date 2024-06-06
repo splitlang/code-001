@@ -1,0 +1,4549 @@
+/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+body
+{
+	/* Non-Overridable Attributes*/
+	font-size: 62.5%; /* Define the base font-size for all */
+	width: 95%; /* This is necessary when cs is embedded in iframe */
+	/* added by Gavin for fix TT#99229 */
+	font-family: "helvetica neue", arial, verdana, sans-serif;
+	/* Overridable Attributes*/
+	/* None */
+}
+/*added by Blake for TT#108004 at 3/3/2008*/
+form{
+	   float:none !important;
+	}
+	
+body .masterbody
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 0;
+	padding: 0;
+			
+	/* Overridable Attributes*/
+	background-color: white;
+	font-size: 1.0em;
+}
+
+body .masterbody, .mainsection .mastercontentpanel, .mainsection .mastercontentpanel2, .jobsearch .resultpropertiescontentpanel, .jobsearch .boxresultsb2, .jobsearch .boxresultsb3, .jobsearch .boxresultsb4
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	background-color: white;
+}
+
+body .masterbody,
+.alert-frame,
+.sugInput-sug,
+.callout,
+.myaccount .entity-instruction
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+			
+	/* Overridable Attributes*/
+	font-family: "helvetica neue", arial, verdana, sans-serif;
+}
+
+/** Accessibility Styles **/
+.hidden-audible, .hidden-audible-visited {
+	position: absolute;
+	left: 0px;
+	top: -100px;
+	width: 1px; 
+	height: 1px; 
+	overflow: hidden;
+}
+
+.no-change-header {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+.no-change-header-inline {
+	display: inline;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+.no-border {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.legend-pos {
+	margin-left: -7px;
+}
+
+
+.absolute-pos {
+	position: absolute;
+}
+
+h1 {
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3 {
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+	display:inline;
+}
+h4 {
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+.mainsection
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/	
+	/* None */
+}
+
+
+.mainsection .mastercontentpanel
+{
+	/* Non-Overridable Attributes*/
+	border-color: transparent silver silver silver;
+	border-style: none solid solid solid;
+	border-width: 0 1px 1px 1px;
+	display: block;
+	margin: 0;
+	padding: 10px 20px 20px 20px;
+	xfloat: left;
+	
+	/* Overridable Attributes*/
+	/* Previously Defined */
+}
+
+.mainsection .mastercontentpanel2
+{
+	/* Non-Overridable Attributes*/
+	border: none;
+	display: block;
+	padding: 10px 20px 5px 20px;
+	xfloat: left;
+	
+	/* Overridable Attributes*/	
+	/* Previously Defined */
+}
+
+.mainsection .tablelist
+{
+	/* Non-Overridable Attributes */
+	border: 0;
+	font-size: 1.0em; /* Fix css hierarchy in <table> in IE problem */
+
+	/* Overridable Attributes */
+	/* None */
+}
+/*added by blake for TT97797 at 2007-08-13*/
+.mainsection .contentlist
+{
+   width:100%;
+   font-size: 1.0em;
+}
+.mainsection .columnfull
+{
+	/* Non-Overridable Attributes */
+	padding-right: 10px;
+	vertical-align: top;
+	width: 100%;	
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .column165,
+.messagecenter .column165
+{
+	/* Non-Overridable Attributes */
+	vertical-align:top;
+	width: 200px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .metagrouppanel
+{
+	/* Non-Overridable Attributes*/
+	background-color: transparent;
+	padding: 0;
+	margin: 4px 4px 4px 0;
+	display: block;
+		
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .metapanel
+{
+	/* Non-Overridable Attributes*/
+	background-color: transparent;
+	display: block;
+	margin: 0 0 25px 0; /* TT124434 - shorvath */
+	padding: 0;
+	text-align: right;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* Add by John Jiang for fixing TT#113778 on 4/17/2008 */
+.mainsection .metapanel3
+{
+	/* Non-Overridable Attributes*/
+	background-color: transparent;
+	display: block;
+	margin: 0 0 15px 0;
+	padding: 0;
+	text-align: right;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .metapanel2
+{
+	/* Non-Overridable Attributes*/
+	background-color: transparent;
+	padding: 0;
+	margin: 2px 0 0 2px;
+	display: block;
+		
+	/* Overridable Attributes*/
+	/* None */
+	
+}
+
+.myaccount .metalink2 a,
+.mainsection .metalink2 a,
+.messagecenter .toolbar a,
+.messagecenter .list-column a,
+.messagecenter .section-name a,
+.alert-button-panel a
+{
+	/* Non-Overridable Attributes*/	
+	display: inline;
+	margin: 0;
+	padding: 0;
+	position: static;
+	
+	/* Overridable Attributes*/
+	color: blue;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;		
+}
+
+/* From main.css - .mainsection .metalink2 a */
+.myaccount .metalink2 a:hover,
+.mainsection .metalink2 a:hover,
+.messagecenter .toolbar a:hover,
+.messagecenter .list-column a:hover,
+.messagecenter .section-name a:hover,
+.alert-button-panel a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	text-decoration: underline;
+}
+
+.mainsection .separator
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	margin: 0 4px 0 4px;
+	
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;		
+}
+
+.mainsection .descriptionpanel
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 15px 0 15px 0;
+	padding: 0;
+	zoom:1;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .captionleft
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 15px 0 15px 0;
+	text-align: left;
+	padding: 0;
+	zoom:1;
+	text-decoration: none;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+
+.mainsection .subtitle,
+.mainsection .subtitlepopuppanel,
+.messagecenter .page-header-title
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;		
+}
+
+.mainsection .text,
+.myaccount .text,
+.messagecenter .page-header-text,
+.messagecenter .entity-value,
+.messagecenter .list-column-value
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+.mainsection .label,
+.messagecenter .entity-label,
+.messagecenter .column-header-value
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+.messagecenter .entity-label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+
+	/* Overridable Attributes */
+}
+
+.mainsection .entity-label-mandatory
+{
+	display:block;
+	padding-left: 8px;
+	background: url("../images/i_red_star.gif") center left no-repeat;
+	line-height: 1.0em;
+}
+
+.mainsection .inputtext
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0 0 6px 0;
+	vertical-align: middle;
+	width: 100%;
+
+	/* Overridable Attributes */
+	background-color: white;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.myaccount .inputtext300,
+.mainsection .inputtext300
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	vertical-align: middle;
+	width: 300px;
+
+	/* Overridable Attributes */
+	background-color: white;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .sendemail .inputtext300
+	{
+	display: block;
+	width: 300px;
+	margin: 2px 0 0 0;
+	color: black;
+	background: #fff;	
+	}
+
+
+.myaccount .inputtextmulti,
+.mainsection .inputtextmulti
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	height:50px;
+	vertical-align: middle;
+	width:485px;
+
+	/* Overridable Attributes */
+	background-color: white;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+	
+.mainsection .inputtextmulti2
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	vertical-align: middle;
+
+	/* Overridable Attributes */
+	background-color: white;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .inputtextmulti3
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	vertical-align: middle;
+    width:485px;
+    
+	/* Overridable Attributes */
+	background-color: white;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .inputselect
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0 0 4px 0;
+	width: 100%;	
+	
+	/* Overridable Attributes */
+	background-color: white;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	
+	/* IE Specific Hack */
+	"}"
+	width: 97%;
+}
+
+.mainsection .input-smaller .entity-value
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .inputbutton	
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-bottom: 2px;
+	margin-left: 4px;
+	margin-top: 2px;
+	vertical-align: middle;
+	width: auto;
+	cursor: pointer;
+	
+	/* Overridable Attributes */
+	background-color: #D4D0C8;
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	
+	/* Old Values
+	margin: 0 2px;
+	*/
+}
+
+.mainsection .entity-block .fs-508 .input-smaller .search-btn
+{
+	font-size: 1.1em;
+}
+
+.mainsection .entity-select-action5
+{
+	padding-left: 4px;
+}
+
+.mainsection .iconpanel
+{
+	/* Non-Overridable Attributes */
+	padding: 4px 4px 0 4px;
+	text-align:right;
+	vertical-align:top;
+	width:4%;
+		
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .iconpanelhighlight,
+.mainsection .iconcontentpanelhighlight
+{
+	/* Non-Overridable Attributes */
+	/* None */
+			
+	/* Overridable Attributes */
+	background-color: #FFFFFF;
+}
+
+.mainsection .iconpanelhighlight
+{
+	/* Non-Overridable Attributes */
+	border-color: silver transparent silver silver;
+	border-style: solid none solid solid;
+	border-width: 1px 0 1px 1px;
+	padding: 4px 4px 0 4px;
+	text-align:right;
+	vertical-align:top;
+	width:4%;	
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+
+.mainsection .iconpanelupdated,
+.mainsection .iconcontentpanelupdated
+{
+	/* Non-Overridable Attributes */
+	/* None */
+			
+	/* Overridable Attributes */
+	background-color: #FAF1D1;
+}
+
+.mainsection .iconpanelupdated
+{
+	/* Non-Overridable Attributes */
+	border-color: silver transparent silver silver;
+	border-style: solid none solid solid;
+	border-width: 1px 0 1px 1px;
+	padding: 4px 4px 0 4px;
+	text-align:right;
+	vertical-align:top;	
+	width:4%;
+	
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .iconstatuspanel
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .iconcontentpanel
+{
+	/* Non-Overridable Attributes */
+    padding-bottom:6px;	
+    padding-top:4px;	
+    vertical-align:top;	
+	width:100%;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .iconcontentpanelupdated
+{
+	/* Non-Overridable Attributes */
+	border-color: silver silver silver transparent;
+	border-style: solid solid solid none;
+	border-width: 1px 1px 1px 0;;
+	padding-bottom:6px;	
+	padding-top:4px;	
+	vertical-align:top;
+	width:100%;
+	
+	/* Overridable Attributes */
+	/* Previously Defined */
+}	
+
+.mainsection .iconcontentpanelhighlight
+{
+	/* Non-Overridable Attributes */
+	border-color: silver silver silver transparent;
+	border-style: solid solid solid none;
+	border-width: 1px 1px 1px 0;;
+	padding-bottom:6px;	
+	padding-top:4px;	
+	vertical-align:top;
+	width:100%;
+	
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .mymessagescontentpanel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 15px 0 0 0;
+	padding: 10px 10px 10px 10px;
+
+	/* Overridable Attributes */
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	background-color: transparent;	
+}
+
+.mainsection .calloutimg
+{
+	/* Non-Overridable Attributes*/
+	background: url("../images/callout.gif") no-repeat;
+	border: 0;
+	/* TT#121199 - Fix 508 Problems */
+	cursor: pointer;
+	/* TT#121199 - Fix 508 Problems */
+	display: inline-block;
+	margin: 0 2px 0 0;
+	vertical-align: top;
+	width: 16px;
+	height: 10px;                                                         
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .logomcafeesmall
+{
+	/* Non-Overridable Attributes*/
+	border: 0;
+	display: block;
+	height: 52px;/*25px;*/
+	margin: 0 0 6px 25px;
+	padding: 0;
+	vertical-align: middle;
+	width: 140px;/*100px;*/
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .logomcafeesmall1
+{
+	/* Non-Overridable Attributes*/
+	border: 0;
+	display: inline;
+	height: 25px;
+	margin: 0 0 6px 25px;
+	padding: 0 20px 0 0;
+	vertical-align: middle;
+	width: 100px;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .logomcafeesmalltext
+{
+	/* Non-Overridable Attributes */
+	display: inline-block;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+/************Textool Generated************/
+.resource-bold
+{
+    /* Non-Overridable Attributes*/
+    font-weight:        bold;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel,
+.headersection .box .boxtop .boxb2-top,
+.headersection .box .boxtop .boxb3-top,
+.headersection .box .boxtop .boxb4-top,
+.footeraction .footeractionpanel,
+.footeraction .box .boxbottom .boxb4,
+.footeraction .box .boxbottom .boxb3,
+.footeraction .box .boxbottom .boxb2,
+.mainsection .headerpanel,
+.mainsection .boxtrain .boxtraintop .boxtrainb2-top,
+.mainsection .boxtrain .boxtraintop .boxtrainb3-top,
+.mainsection .boxtrain .boxtraintop .boxtrainb4-top
+{
+	/* Overridable Attributes */
+	background-color: #DCC879;			
+}
+
+.headersection .headerpanel .leftpanel,
+.footeraction .footeractionpanel .leftpanel
+{
+	float: left;
+}
+
+.headersection .headerpanel .rightpanel,
+.footeraction .footeractionpanel .rightpanel
+{
+	text-align: right;
+	display: block;
+}
+
+.headersection .headerpanel .clearpanel,
+.footeraction .footeractionpanel .clearpanel
+{
+	clear: both;
+}
+
+.headersection .nowrap
+{
+	white-space: nowrap;
+}
+
+.headersection .headerpanel .technicalhelpimg,
+.footeraction .footeractionpanel .technicalhelpimg
+{
+	/* Non-Overridable Attributes */
+	border: 0;
+	height: 16px;
+	margin-left: 2px;
+	vertical-align: middle;
+	width: 16px;	
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+/*Ok*/
+.myaccount .title,
+.myaccount .titleaction,
+.mainsection .titlepage
+{
+	/* Non-Overridable Attributes */
+	position: relative;
+  	/* None */
+	
+	/* Overridable Attributes */
+	color: #D74B00;
+	font-size: 1.6em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+.mainsection .metapanel a
+{
+	/* Non-Overridable Attributes*/
+	z-index: 10;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* Add by John Jiang for fixing TT#113778 on 4/17/2008 */
+.mainsection .metapanel3 a
+{
+	z-index: 10;
+}
+
+
+
+
+
+
+/* TT#121357 - Fix 508 Problems */
+/* fieldsets introduced to comply with 508 accessiblity rules. */
+
+.blockpanel fieldset
+{
+	/* Remove the default padding of any Fieldset in Blocks */
+	padding-left: 0;	
+}
+
+.fs-508
+{
+    border-style: none;
+    padding: 0; 
+    
+    /* IE Specific Hack */
+	"}"
+	padding-left: -20px;
+}
+
+.questionnaire legend, .questionnaire label
+{
+	display: inline;
+	/* IE8 and below */
+    display: inline\9;
+    
+    /* IE7 and below */
+    *display: block;
+}
+
+.questionnaire .fs-508 possibleanswers input
+{
+	/* IE8 and below */
+    padding-left: 10px\9;
+    
+    /* IE7 and below */
+    *padding-left: 0px; 
+}
+
+.fs-508 legend, .fs-508 label input
+{
+    padding: 0; 
+}
+
+.fs-508-inline
+{
+    display: inline;
+}
+
+.blockpanel .fs-508-block
+{
+    display: table;
+    /* IE7 and below */
+    display: block !important!;
+    font-size: 1.1em;
+    padding-left: 16px;
+    
+   	/* IE Specific Hack */
+	"}"
+	padding-left: 20px;
+}
+
+.fs-508-inline select
+{
+    width: auto;
+}
+/* /TT#121357 - Fix 508 Problems */
+
+.questionnaire .separatorpanel
+{
+	padding-top: 10px;
+}
+
+.assessment .separatorpanel
+{
+	padding-top: 10px;
+}
+
+/* TT#120476 - Fix Forgot Password space between links. */
+.small-link, .small-link-visited
+{
+	padding-right: 8px;
+}
+/* /TT#120476 - Fix Forgot Password space between links. */
+/* TT#125217 - Fix JAWS Reader to not read ftlHiddenFrame content */
+#ftlhiddenframe
+{
+	visibility: hidden;
+		/* IE Specific Hack : tt117496 - FireFox 2.0 not supported*/
+	"}"
+	display: none;
+}
+/* /TT#125217 - Fix JAWS Reader to not read ftlHiddenFrame content */
+@media print
+{
+	.requisitionDescription .metalink2,
+	.requisitionDescription .separator,
+	#printableFormat .mainsection .metalink2,
+	#PrintableFormatForm .metapanel2
+	{
+		display:none;
+	}
+}
+
+.blockpanel .questionAnswerPanel
+{
+    display: block;
+    margin-top: 5px;
+	   margin-left: 30px;
+	   margin-bottom: 15px;
+}
+/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+/* Embedded Alert */ 
+
+.alert-full-page-container
+{
+	/* Non-Overridable Attributes*/
+	left: auto;
+	position: absolute;
+	top: 0px;
+	z-index: 99999;
+	
+	/* Overridable Attributes*/	
+	text-align: left;
+}
+	
+.alert-full-page-bg
+{
+	/* Non-Overridable Attributes*/
+	filter: alpha(opacity=0); 
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	-moz-opacity: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+				
+	/* Overridable Attributes*/	
+	background-color: white;
+}
+	
+.alert-button-panel
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 7px 0 0 0;
+	/*padding: 3px 0 3px 0;*/
+	text-align: center;
+	width: 100%;
+	
+	/* Overridable Attributes*/	
+	/* None */
+}
+
+.alert-button-panel input
+{
+	display:inline;
+}
+	
+.alert-message-notification
+{
+	/* Non-Overridable Attributes*/
+	border: 1px solid silver;
+	display: block;
+	margin: 0 16px 20px 16px;
+	/*padding: 10px 10px 20px 10px;*/
+			
+	/* Overridable Attributes*/	
+	background-color: #EAEAEA;
+}
+
+.alert-message-notification-pane
+{
+	/* Non-Overridable Attributes*/
+	margin: 0 16px 0 16px;
+	
+	/* Overridable Attributes*/	
+	/* None */
+}
+	
+.alert-content
+{
+	/* Non-Overridable Attributes*/
+	/*padding: 16px 0 16px 0;*/
+	text-align: left;
+		
+	/* Overridable Attributes*/	
+	/* None */
+}
+	
+.alert-frame
+{
+	/* Non-Overridable Attributes*/
+	/*border: 1px solid silver;*/
+	display: block;
+	margin: 5%;
+	/*padding: 16px 0 16px 0;*/
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	width: 90%;		
+		
+	/* Overridable Attributes*/	
+	background-color: white;
+}
+
+.alert-frame-bottom
+{
+	/* Non-Overridable Attributes*/
+	margin: 0 0 20px 0;
+	
+	/* Overridable Attributes*/	
+	/* None */
+}
+
+.alert-frame-margin-top
+{
+	/* Non-Overridable Attributes*/
+	margin-top: 52px;
+	position: fixed;
+	
+	/* Overridable Attributes*/	
+	/* None */
+}
+	
+.alert-img
+{
+	/* Non-Overridable Attributes*/
+	float: left;
+	
+	/* Overridable Attributes*/	
+	/* None */
+}
+
+.alert-title
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin-left: 1px;
+	padding-bottom: 8px;
+		
+	/* Overridable Attributes*/	
+	color: black;
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+.alert-text
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin-left: 1px;
+	
+	/* Overridable Attributes*/	
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.alert-message 
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 0px 8px 0px 4px;
+	
+	/* Overridable Attributes*/	
+	color: black;
+	font-size: 1.0em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* /Embedded Alert */.alert-frame
+{
+	padding: 16px 0 16px 0;
+}/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+.headersection
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .separator
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	vertical-align: middle;
+	
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.headersection .metalinkinline
+{
+	display: inline;
+}
+
+.headersection .metalink a
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	margin: 0;
+	padding: 0;
+	vertical-align: text-top;
+	
+	/* Overridable Attributes*/
+	color: blue;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}	
+
+/* From header.css - .headersection .metalink a */
+.headersection .metalink a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	text-decoration: underline;
+}
+
+.headersection .box
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.headersection .box .boxtop
+{
+	/* Non-Overridable Attributes */
+	display:block;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.headersection .box .boxtop .boxb2-top,
+.headersection .box .boxtop .boxb3-top,
+.headersection .box .boxtop .boxb4-top
+{
+	/* Non-Overridable Attributes */
+	border-left: 1px solid silver; 
+	border-right: 1px solid silver;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.headersection .box .boxtop .boxb1-top
+{
+	/* Non-Overridable Attributes */
+	background-color: silver;
+	display: block;
+	height: 1px;
+	margin: 0 5px; 
+	overflow: hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.headersection .box .boxtop .boxb2-top
+{
+	/* Non-Overridable Attributes */
+	border-width: 0 2px;
+	display: block;
+	height: 1px;
+	margin: 0 3px; 
+	overflow: hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.headersection .box .boxtop .boxb3-top
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	height: 1px;
+	margin: 0 2px;
+	overflow: hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.headersection .box .boxtop .boxb4-top
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	height: 2px;
+	margin: 0 1px;
+	overflow: hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.headersection .headerpanel
+{
+	/* Non-Overridable Attributes*/
+    border: 1px solid silver;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    display: block;
+	margin: 0;
+	padding: 0 8px 0 8px;
+	zoom: 1;
+
+	/* Overridable Attributes*/
+	/* Previously Defined */
+}
+
+.headersection .headerpanel .userpanel
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+		
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel .userpanel .username
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	margin-right: 4px;
+	vertical-align: text-top;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}	
+
+/* From header.css - .headersection .separator */
+.headersection .headerpanel .userpanel .separator
+{
+	/* Non-Overridable Attributes*/
+	margin: 0 4px 0 0;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* From header.css - .headersection .metalink a */
+.headersection .headerpanel .userpanel .metalink a
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}	
+
+/* From header.css - .headersection .metalink a:hover */
+.headersection .headerpanel .userpanel .metalink a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */	
+}
+
+.headersection .headerpanel .metapanel
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 0;	
+	padding: 0;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel .metapanel .metalinkimg
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	vertical-align: middle;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.iconpanel .metalinkimg
+{
+	border: 1;
+	display: inline;
+	height: 16px;
+	position: absolute;
+	vertical-align: middle;
+	width: 16px;
+}
+
+.headersection .headerpanel .metapanel .metagrouppanel
+{
+	/* Overridable Attributes*/
+	padding: 0;
+		
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* From header.css - .headersection .separator */
+.headersection .headerpanel .metapanel .metagrouppanel .separator
+{
+	/* Non-Overridable Attributes*/
+	margin: 0 4px 0 4px;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* From header.css - .headersection .metalink a */
+.headersection .headerpanel .metapanel .metagrouppanel .metalink a
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}	
+
+/* From header.css - .headersection .metalink a:hover */
+.headersection .headerpanel .metapanel .metagrouppanel .metalink a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel .linkpanel
+{
+	/* Non-Overridable Attributes*/
+	border: 0;
+	display: block;
+	margin: 10px 0 0 0;
+	padding: 4px 0 0 0;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel .linkpanel .selectedlink
+{
+	/* Non-Overridable Attributes*/
+    display: inline-block;
+
+    /* TODO: The color of the bottom border doesn't work in IE and must be transparent for customization */
+    border: 1px solid silver;
+    border-bottom-color: transparent;
+	padding: 6px 8px 4px 8px;
+
+	/* Overridable Attributes*/
+	background-color: #FAF1D1;
+}
+
+/* IE Specific Hack */		
+html>body .headersection .headerpanel .linkpanel .selectedlink
+{
+    margin: 0 6px 0 0;
+
+    zoom: 1;
+    *display: inline;
+}
+
+.headersection .headerpanel .linkpanel .magnifierimg
+{
+	/* Non-Overridable Attributes*/
+	background: url("../images/magnifier.gif") no-repeat;
+	border: 0;
+	display: inline-block;
+	height: 11px;
+	width: 13px;
+	margin: 8px 0 0 8px;
+
+    /* Overridable Attributes*/
+    /* None */
+}
+
+	
+ 	/* IE Specific Hack */
+html>body .headersection .headerpanel .linkpanel .magnifierimg
+{
+ 	margin: 0;
+
+    zoom: 1;
+    *display: inline;
+}
+
+/* From header.css - .headersection .headerpanel .linkpanel .magnifierimg */
+.headersection .headerpanel .linkpanel .selectedlink .magnifierimg
+{
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* IE Specific Hack */		
+html>body .headersection .headerpanel .linkpanel .selectedlink .magnifierimg
+{
+	/* None */
+}
+
+.headersection .headerpanel .linkpanel .grouplink
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel .linkpanel .selectedlink a,
+.headersection .headerpanel .linkpanel .selectedlink span
+{
+	/* Non-Overridable Attributes*/
+	cursor: default;
+	
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* From header.css - .headersection .headerpanel .linkpanel .selectedlink a */
+.headersection .headerpanel .linkpanel .selectedlink a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .headerpanel .linkpanel .link
+{
+	/* Non-Overridable Attributes*/
+    border: 1px solid silver;
+    display: inline-block;
+	padding: 0;
+	margin: 0 6px 0 0;
+	
+	/* Overridable Attributes*/
+	background-color: white;
+}
+	/* IE Specific Hack */
+html>body .headersection .headerpanel .linkpanel .link
+{	
+	padding: 6px 0 4px 0;
+
+    zoom: 1;
+    *display: inline;
+}
+
+.headersection .headerpanel .linkpanel .link a
+{
+	/* Non-Overridable Attributes*/
+	padding: 6px 8px 4px 8px;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+	/* IE Specific Hack */
+html>body .headersection .headerpanel .linkpanel .link a
+{
+	padding: 4px 8px 4px 8px;
+}
+
+/* From header.css - .headersection .headerpanel .linkpanel .link a */
+.headersection .headerpanel .linkpanel .link a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	text-decoration: underline;
+}
+
+/* From header.css - .headersection .headerpanel .linkpanel .magnifierimg */
+.headersection .headerpanel .linkpanel .link .magnifierimg
+{
+	/* Non-Overridable Attributes*/
+    /* None */
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* IE Specific Hack */
+html>body .headersection .headerpanel .linkpanel .link .magnifierimg
+{
+    margin-left: 8px;
+}
+
+.headersection .link2panel
+{
+	/* Non-Overridable Attributes*/
+    border: 1px solid silver;
+    border-top: 0 none;
+    display: block;
+	padding: 6px 8px 2px 8px;
+	margin: 0;
+	position: relative;
+
+	/* Overridable Attributes*/
+	background-color: #FAF1D1;	
+}
+
+.headersection .link2panel .selectedlink2
+{
+	/* Non-Overridable Attributes*/
+    border: 1px solid silver;
+    border-bottom: none transparent;
+    border-bottom-width: 2px;
+    display: inline;
+	padding: 2px 8px 2px 8px;
+	position: relative;
+	
+	/* Overridable Attributes*/
+	background-color: white;
+}
+
+/* IE Specific Hack */
+html>body .headersection .link2panel .selectedlink2
+{
+    border-bottom-style: solid;
+}
+
+.headersection .link2panel .selectedlink2 a,
+.headersection .link2panel .selectedlink2 span
+{
+	/* Non-Overridable Attributes*/
+	cursor: default;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* From header.css - .headersection .link2panel .selectedlink2 a */
+.headersection .link2panel .selectedlink2 a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .link2panel .separatorlink2
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+ 	padding-right: 0;
+	padding-left: 2px;
+
+	/* Overridable Attributes*/
+	color: #808080;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+	/* IE Specific Hack */
+html>body .headersection .link2panel .separatorlink2
+{
+ 	padding-left: 0;
+ 	padding-right: 2px;
+}
+
+.headersection .link2panel .link2
+{
+	/* Non-Overridable Attributes*/
+	border: 0;
+	display: inline;
+	padding: 0; 
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.headersection .link2panel .link2 a
+{
+	/* Non-Overridable Attributes*/
+	padding: 2px 8px 2px 8px;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* From header.css - .headersection .link2panel .link2 a */
+.headersection .link2panel .link2 a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	background-color: white;
+	text-decoration: underline;
+}
+
+.headersection .spacerlink2panel
+{
+	/* Non-Overridable Attributes*/
+	border-style: none;
+	border-width: 0;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 8px;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.footeraction 
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */	
+}
+
+.footeraction .footeractionpanel
+{
+	/* Non-Overridable Attributes */
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px 1px 0 1px;
+	display: block;
+	overflow:visible;
+	padding: 4px 10px 4px 10px;
+	
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) {
+	.footeraction .footeractionpanel {
+		padding: 4px 10px 7px 10px;
+	}
+}
+
+.footeraction .footeractionpanel .footergroupactionpanel
+{
+	/* Non-Overridable Attributes */
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css - .mainsection .metalink2 a */
+.footeraction .footeractionpanel .footergroupactionpanel .metalink2 a
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */ /* Font attribute cannot be overriden here avoiding user to put same color as background */
+}
+
+/* From main.css - .mainsection .metalink2 a:hover */
+.footeraction .footeractionpanel .footergroupactionpanel .metalink2 a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */ /* Font attribute cannot be overriden here avoiding user to put same color as background */
+}
+
+.footeraction .box
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.footeraction .box .boxbottom
+{
+	/* Non-Overridable Attributes */
+	display:block;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.footeraction .box .boxbottom .boxb2,
+.footeraction .box .boxbottom .boxb3,
+.footeraction .box .boxbottom .boxb4
+{
+	/* Non-Overridable Attributes */
+	border-left: 1px solid silver; 
+	border-right: 1px solid silver;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.footeraction .boxb4
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height: 2px;
+	margin: 0 1px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.footeraction .boxb3
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height:1px;
+	margin: 0 2px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.footeraction .boxb2
+{
+	/* Non-Overridable Attributes */
+	border-width: 0 2px;
+	display:block;
+	height:1px;
+	margin: 0 3px; 
+	overflow:hidden;	
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.footeraction .box .boxbottom .boxb1
+{
+	/* Non-Overridable Attributes */
+	background-color: silver;
+	display:block;
+	height:1px;
+	margin: 0 5px; 
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+html
+{
+	/* Non-Overridable Attributes */
+	background: url("../images/shim.gif") no-repeat;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+body
+{
+	/* Non-Overridable Attributes */
+	background: url("../images/shim.gif") no-repeat;
+	direction: ltr;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .fs-508-block {
+    display: block;
+    font-size: 1.1em;
+    padding-left: 16px;
+}
+
+.accessmanagement .block-main-border-fix
+{
+	/* Non-Overridable Attributes */
+	border: none;
+	display: block;
+	padding-left: 20px;
+	padding-bottom: 16px;
+        position:relative;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .requiredNote {
+	display: inline;
+	font-size: 1.1em;
+	color: #575757;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0;
+}
+
+.accessmanagement .framed-notification
+{
+	/* Non-Overridable Attributes */
+	background: #f1f1f2;
+	border: 1px solid #939598;
+	display: block;
+	padding: 10px 10px 10px 10px;
+	margin: 16px 16px 16px 0;
+}
+
+.accessmanagement .contentPanel {
+	display: block;
+	margin: 15px 0 0 16px;
+	width: 90%;
+}
+
+.accessmanagement .text {
+	font-size: 1.2em;
+	font-weight: normal;
+	color: black;
+	display: block;
+	margin: 15px 0 0 16px;
+	width: 90%;
+}
+
+.accessmanagement .subTitle {
+	font-size: 1.2em;
+	color: black;
+	font-weight: bold;
+	display: block;
+	margin: 15px 0 0 16px;
+	width: 90%;
+}
+
+.accessmanagement .block-main-border-fix .fs-508-block
+{
+	display: block;
+    font-size: 1.1em;
+    padding-left: 16px;
+}
+
+.accessmanagement .link-small-no-text-decoration {
+	font-family:Tahoma,Verdana,sans-serif;
+	font-size:0.9em;
+	text-decoration:none;
+	text-align: left;
+}
+
+.accessmanagement .logoLoginLarge
+{
+	/* Non-Overridable Attributes */
+	display:none;
+
+ 	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .entity-label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-left: 2px;
+
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*.accessmanagement .entity-label-mandatory
+{
+	Non-Overridable Attributes
+	display: block;
+	padding-left: 8px;
+
+	Overridable Attributes
+	background: url("../images/i_red_star.gif") left center no-repeat;
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}*/
+
+.accessmanagement .entity-mandatory-field
+{
+	/* Non-Overridable Attributes */
+	display: block;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.accessmanagement .link-small a
+{
+	/* Non-Overridable Attributes */
+	display: block;
+
+	/* Overridable Attributes */
+	color: blue;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.accessmanagement .link-small a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	text-decoration: underline;
+}
+
+.accessmanagement .page-header
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-bottom: 6px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .page-header-action
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-bottom: 6px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .page-header-title
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+
+	/* Overridable Attributes */
+	color: #D74B00;
+	font-size: 1.6em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.accessmanagement .page-header-text
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.accessmanagement .dialog-columns
+{
+	/* Non-Overridable Attributes */
+	border-style:none;
+	padding: 15px 0 0 0;
+	width: 100%;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .button-group-center
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-left: 20px;
+	text-align: left;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.accessmanagement .nav-btn5
+{
+	padding-right: 15px;
+	background-color: white;
+}
+
+/** Since 750SP15 - TT#165756 (esamson) **/
+.accessmanagement .dialog-columns-2
+{
+ padding: 15px 15px 0 15px;
+ width: 250px;
+}
+
+/** Since 750SP15 - TT#165756 (esamson) **/
+.accessmanagement .dialog-columns-openid
+{
+ padding: 5px 15px 5px 15px;
+ width: auto;
+ border-left: 1px solid #7F7F7F;
+}
+
+/** Since 750SP15 - TT#165756 (esamson) **/
+.accessmanagement .dialog-columns-openid-text
+{
+ font-size: 1.2em;
+ display: block;
+}
+
+/** Since 750SP15 - TT#165756 (esamson) **/
+.accessmanagement .dialog-columns-openid-link
+{
+  display: inline;	
+  padding-right: 5px;
+  padding-top: 5px;
+  border-style: none;
+  
+ /* IE Specific Hack */
+ "}"
+ padding-right: 2px;
+}
+
+.dialog-columns-openid-link img
+{
+	border: none;
+}
+
+/** Override fix for Minor correction required with fix for �19577847� delivered in IAM component **/
+.accessmanagement .dialog-columns-openid-link-size
+{
+	padding-bottom: 36px;
+	padding-left: 24px;
+	padding-right: 24px
+}
+
+.accessmanagement .sso-wizard-button-group-left-top
+{
+	display: block;
+	padding: 5px 0 0 0;
+	margin: 10px;
+}
+
+.accessmanagement .sso-wizard-button-group-left-bottom
+{
+	display: block;
+	padding: 5px 10px;
+}
+
+.accessmanagement .sso-wizard-username-password-block
+{
+	display: block;
+	padding: 0px 0px 10px;
+}/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+/* From main.css - .mainsection .metalink2 a */
+.jobsearch .metalink2 a
+{
+	/* Non-Overridable Attributes*/	
+	/* None */
+		
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* From search.css - .jobsearch .metalink2 a */
+.jobsearch .metalink2 a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* From main.css - .mainsection .separator */
+.jobsearch .separator
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+/* From main.css - .mainsection .subtitle */
+.jobsearch .subtitle
+{
+	/* Non-Overridable Attributes*/	
+	display: inline;
+
+	/* Overridable Attributes*/	
+	/* None */
+}
+
+/* From search.css - .jobsearch .subtitle */
+.jobsearch .savetitlepanel .subtitle
+{
+	/* Non-Overridable Attributes*/
+	margin: 0;					
+	
+	/* Overridable Attributes*/
+	/* None */					
+}
+
+/* From main.css - .mainsection .text */
+.jobsearch .text
+{
+	/* Non-Overridable Attributes*/
+	/* None */					
+	
+	/* Overridable Attributes*/
+	/* None */	
+}
+
+/* From search.css - .jobsearch .text */
+.jobsearch .savepanel .descriptionpanel .text
+{
+	/* Non-Overridable Attributes*/
+	/* None */					
+	
+	/* Overridable Attributes*/
+	/* None */			
+}
+
+/* From main.css - .mainsection .label */
+.jobsearch .label
+{
+	/* Non-Overridable Attributes*/
+	/* None */					
+	
+	/* Overridable Attributes*/
+	color: #575757;
+}
+
+/* From search.css - .jobsearch .label */
+.jobsearch .savepanel .label
+{
+	/* Non-Overridable Attributes*/
+	/* None */					
+	
+	/* Overridable Attributes*/
+	color: #575757;
+}
+
+/* From search.css - .jobsearch .label */
+.jobsearch .resultpropertiescontentpanel .label
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0 4px 0 10px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css - .mainsection .inputtext */
+.jobsearch .inputtext
+{
+	/* Non-Overridable Attributes*/
+	/* None */					
+	
+	/* Overridable Attributes*/
+	/* None */				
+}
+
+/* From search.css - .jobsearch .inputtext */
+.jobsearch .savepanel .inputtext
+{
+	/* Non-Overridable Attributes*/
+	/* None */					
+	
+	/* Overridable Attributes*/
+	/* None */					
+}
+
+/* From search.css - .jobsearch .inputtext */
+.jobsearch .contentgrouppanel .inputtext
+{	
+ 	/* Non-Overridable Attributes */
+	margin: 0;
+	
+	/* Overridable Attributes */
+ 	/* None */ 
+
+	/* IE Specific Hack */
+	"}"
+ 	 width: 98%;	
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) {
+	.jobsearch .contentgrouppanel .inputtext {
+		width: 98%;
+	}
+}
+
+/* From main.css - .mainsection .inputbutton */
+.jobsearch .inputbutton
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */				
+}
+
+/* From search.css - .jobsearch .inputbutton */
+.jobsearch .savepanel .inputbutton
+{
+	/* Non-Overridable Attributes*/
+	margin:2px 4px 0 0;
+	
+	/* Overridable Attributes*/
+	/* None */				
+}
+
+/* From search.css - .jobsearch .inputbutton */
+.jobsearch .resultpropertiescontentpanel .inputbutton	
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css - .mainsection .inputselect */
+.jobsearch .inputselect
+{
+	/* Non-Overridable Attributes */
+	/* None */
+		
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From search.css - .jobsearch .inputselect */
+.jobsearch .contentdatapanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	/* None */
+		
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From search.css - .jobsearch .inputselect */
+.jobsearch .resultpropertiescontentpanel .inputselect	
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	vertical-align: middle;
+	width: auto;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .titlemetapanel
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 0 0 6px 0;
+	padding: 6px 0 0 0;   /* modify by John Jiang at 08.05.2007 */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+
+/* Add by John Jiang for fixing TT#113778 on 4/17/2008 */
+.jobsearch .titlemetapanel1
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 0 0 21px 0;
+	padding: 6px 0 0 0;   
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.jobsearch .titlepanel
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+	margin: 0;
+	padding: 0;
+		
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.jobsearch .savepanelgroup
+{
+	/* Non-Overridable Attributes*/
+	padding-bottom: 10px;
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.jobsearch .savecontentpanel
+{
+	/* Non-Overridable Attributes*/
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px;
+	padding: 8px 0 10px 10px;
+
+	/* Overridable Attributes*/
+	background-color:#F7F7F7;
+}
+
+.jobsearch .savetitlepanel
+{
+	/* Non-Overridable Attributes*/
+	padding-bottom:6px;
+	
+	/* Overridable Attributes*/
+	/* None */					
+}
+
+.jobsearch .grouppanel
+{
+	/* Non-Overridable Attributes */
+	width: 100%;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .column33p
+{
+	/* Non-Overridable Attributes */
+	padding: 2px;
+	vertical-align: top;
+	width: 33.3%;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .contentdatapanel .searchLookup
+{	
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.jobsearch .linkpanel,
+.jobsearch .boxpanelb2-top,
+.jobsearch .boxpanelb3-top,
+.jobsearch .boxpanelb4-top
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	background-color: #FAF1D1;
+}
+
+.jobsearch .boxpaneltop
+{
+	/* Non-Overridable Attributes */
+	display:block;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb2-top,
+.jobsearch .boxpanelb3-top,
+.jobsearch .boxpanelb4-top
+{
+	/* Non-Overridable Attributes */
+	border-left: 1px solid silver; 
+	border-right: 1px solid silver;
+
+	/* Overridable Attributes */
+	/* Previously Defined */ 
+}
+
+.jobsearch .boxpanelb1-top
+{
+	/* Non-Overridable Attributes */
+	background-color: silver;
+	display:block;
+	height:1px;
+	margin: 0 5px; 
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb2-top
+{
+	/* Non-Overridable Attributes */
+	border-width: 0 2px;
+	display:block;
+	height:1px;
+	margin: 0 3px; 
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb3-top
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height:1px;
+	margin: 0 2px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb4-top
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height: 2px;
+	margin: 0 1px;
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .linkpanel
+{
+	/* Non-Overridable Attributes */
+	border-color: transparent silver silver silver;
+	border-style: none solid solid solid;
+	border-width: 0 1px 1px 1px;
+	display: block;
+	margin: 0;
+	padding: 4px 8px 2px 8px;
+	position: static;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.jobsearch .selectedlink
+{
+	/* Non-Overridable Attributes */
+	border-color: silver silver transparent silver;
+	border-style: solid solid none solid;
+	border-width: 1px 1px 1px 1px;
+	cursor: default;
+	display: inline;
+	margin: 0 6px 0 0;
+	padding: 3px 8px 2px 8px;
+
+	/* Overridable Attributes */
+	background-color: #F7F7F7;
+}	
+
+/* IE Specific Hack */
+html>body .jobsearch .selectedlink
+{
+	border-style: solid solid solid solid;
+}
+
+.jobsearch .linklabel
+{
+	/* Non-Overridable Attributes */
+	background-color:transparent;
+	padding-left: 4px;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.jobsearch .contentdatapanel,
+.jobsearch .boxpanelb2,
+.jobsearch .boxpanelb3,
+.jobsearch .boxpanelb4
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	background-color: #F7F7F7;
+}
+
+.jobsearch .contentdatapanel
+{
+	/* Non-Overridable Attributes */
+	border-color: transparent silver transparent silver;
+	border-style: none solid none solid;
+	border-width: 0 1px 0 1px;
+	display: block;
+	margin: 0;
+	padding: 4px 8px 6px 8px;
+	float:left;
+	width:100%;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.jobsearch .addjobfieldaction
+{
+	/* Non-Overridable Attributes */
+	border-color: transparent silver transparent silver;
+	border-style: none solid none solid;
+	border-width: 0 0px 0 0px;
+	display: block;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	width:100%;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+/* IE Specific Hack */
+html>body .jobsearch .contentdatapanel
+{
+	float:none;
+	width:auto;
+}
+
+.jobsearch .labelcontent
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.jobsearch .action a
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: blue;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* From search.css - .jobsearch .action a */
+.jobsearch .action a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	text-decoration: underline;
+}
+
+.jobsearch .boxpanelbottom
+{
+	/* Non-Overridable Attributes */
+	display:block;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb2,
+.jobsearch .boxpanelb3,
+.jobsearch .boxpanelb4
+{
+	/* Non-Overridable Attributes */
+	border-left: 1px solid silver; 
+	border-right: 1px solid silver;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.jobsearch .boxpanelb4
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height: 2px;
+	margin: 0 1px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb3
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height:1px;
+	margin: 0 2px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb2
+{
+	/* Non-Overridable Attributes */
+	border-width: 0 2px;
+	display:block;
+	height:1px;
+	margin: 0 3px; 
+	overflow:hidden;	
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxpanelb1
+{
+	/* Non-Overridable Attributes */
+	background-color: silver;
+	display:block;
+	height:1px;
+	margin: 0 5px; 
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .resultpropertiespanel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	width: 100%;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .resultpropertiescontentpanel,
+.jobsearch .boxresultsb2,
+.jobsearch .boxresultsb3,
+.jobsearch .boxresultsb4
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	background-color: white;	
+}
+
+.jobsearch .resultpropertiescontentpanel
+{
+	/* Non-Overridable Attributes */
+	border-color: transparent silver transparent silver;
+	border-style: none solid none solid;
+	border-width: 0 1px 0 1px;
+	margin-left: 10px;
+   	margin-right: 10px;
+	padding: 4px 0 0 10px;
+
+	/* Overridable Attributes */
+	/* Previously Defined */	
+}
+
+.jobsearch .boxresults
+{
+	/* Non-Overridable Attributes */
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxresultsbottom
+{
+	/* Non-Overridable Attributes */
+	display:block;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxresultsb2,
+.jobsearch .boxresultsb3,
+.jobsearch .boxresultsb4
+{
+	/* Non-Overridable Attributes */
+	border-left: 1px solid silver; 
+	border-right: 1px solid silver;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.jobsearch .boxresultsb4
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height: 2px;
+	margin: 0 1px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxresultsb3
+{
+	/* Non-Overridable Attributes */
+	display:block;
+	height:1px;
+	margin: 0 2px;
+	overflow:hidden;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxresultsb2
+{
+	/* Non-Overridable Attributes */
+	border-width: 0 2px;
+	display:block;
+	height:1px;
+	margin: 0 3px; 
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .boxresultsb1
+{
+	/* Non-Overridable Attributes */
+	background-color: silver;
+	display:block;
+	height:1px;
+	margin: 0 5px; 
+	overflow:hidden;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .tablelist1
+{
+	/* Non-Overridable Attributes */
+	font-size: 1.0em;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+
+.jobsearch .linkpanel .separatorlink
+{
+	/* Non-Overridable Attributes*/
+	display: inline;
+ 	padding-right: 0;
+	padding-left: 2px;
+
+	/* Overridable Attributes*/
+	color: #808080;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+	/* IE Specific Hack */
+html>body .jobsearch .linkpanel .separatorlink
+{
+ 	padding-left: 0;
+ 	padding-right: 2px;
+}
+
+.jobsearch .linkpanel .link
+{
+	/* Non-Overridable Attributes*/
+	border: 0;
+	display: inline;
+	padding: 0; 
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.jobsearch .linkpanel .link a
+{
+	/* Non-Overridable Attributes*/
+	padding: 2px 8px 2px 8px;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.0em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* From search.css - .jobsearch .linkpanel .link a */
+.jobsearch .linkpanel .link a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	background-color: #F7F7F7;
+	text-decoration: underline;
+}
+
+.jobsearch .linkpanel .selectedlink a
+{
+	/* Non-Overridable Attributes*/
+	cursor: default;
+
+	/* Overridable Attributes*/
+	color: black;
+	font-size: 1.0em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* From header.css - .headersection .linkpanel .selectedlink a */
+.jobsearch .linkpanel .selectedlink a:hover
+{
+	/* Non-Overridable Attributes*/
+	/* None */
+	
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.jobsearch .contentdatapanel .tableradius
+{
+	/* Non-Overridable Attributes */
+	font-size: 1.0em;
+	padding-right: 10px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .tablelistcontentradius
+{
+	/* Non-Overridable Attributes */
+	font-size: 1.0em;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .tablelistradius
+{
+	/* Non-Overridable Attributes */
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px;
+	font-size: 1.0em;
+	height: 200px;
+	overflow: auto;
+	
+	/* Overridable Attributes */
+	background-color: white;
+}
+
+.jobsearch .headerlistradius
+{
+	/* Non-Overridable Attributes */
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px;
+	font-size: 1.0em;
+	margin: 5px 0px 0px 0px;
+	width: 100%;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .columncheckboxradius
+{
+	/* Non-Overridable Attributes */
+	font-size: 1.0em;
+	padding: 8px 0 10px 10px;
+	vertical-align: top;
+	width: 20px;	
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .columnfullradius
+{
+	/* Non-Overridable Attributes */
+	font-size: 1.0em;
+	padding: 8px 0 10px 10px;
+	vertical-align: top;
+	width: 125px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .column165radius
+{
+	/* Non-Overridable Attributes */
+	font-size: 1.0em;
+	padding: 8px 0 10px 10px;
+	vertical-align: top;
+	width: auto;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .radiusfloat
+{
+	/* Non-Overridable Attributes */
+	float: left;
+	overflow: hidden;
+	padding-right: 10px;
+	width: 200px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .radiuserroricon
+{
+	/* Non-Overridable Attributes */
+	float: left;
+	border: 0;
+	display: inline;	
+	width: 16px;
+	height: 16px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .radiusfloatclear
+{
+	/* Non-Overridable Attributes */
+	clear: both;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .rsspanel
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .rsspaneltabbar
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	padding-right:4px;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .rssbutton
+{
+	/* Non-Overridable Attributes */
+	border: 0;
+	display: inline;
+	margin: 2px 0px 0px 4px;
+	vertical-align: top;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .rssindicator
+{
+	/* Non-Overridable Attributes */
+	vertical-align: top;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .facebookpanel
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .facebookbutton
+{
+	/* Non-Overridable Attributes */
+	border: 0;
+	display: inline;
+	margin: 2px 0px 0px 4px;
+	vertical-align: top;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .facebookindicator
+{
+	/* Non-Overridable Attributes */
+	vertical-align: top;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+/*Added by nick for TT117796*/
+.jobsearch .tablelist1
+{
+	/* Non-Overridable Attributes */
+	border: 0;
+	display: block;
+	font-size: 1.0em; /* Fix css hierarchy in <table> in IE problem */
+    width:100%;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .column
+{
+	/* Non-Overridable Attributes */
+	/* Overridable Attributes */
+	/* None */
+	width: 75%;
+}
+
+.jobsearch .column1
+{
+	/* Non-Overridable Attributes */
+	vertical-align:top;
+	text-align:right;
+	display: table-cell;
+	margin-right: 0%;
+	margin-top: 0%;
+	width: 25%;
+	width:340px;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.jobsearch .titlemetapanel .metalink2 a
+{
+	/* Non-Overridable Attributes*/
+	white-space: nowrap;
+	
+	/* Overridable Attributes*/
+	/* None */
+}/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+.column165 .helppanel
+{
+	/* Non-Overridable Attributes */
+	border-color: transparent transparent transparent silver;
+	border-style: none none none solid;
+	border-width: 0 0 0 1px;
+	display: block;
+	padding: 0;
+	width: 200px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.column165 .helppanel_emptycontent
+{
+	border-color: transparent transparent transparent silver;
+	border-style: none none none solid;
+	border-width: 0 0 0 0;
+	display: block; 
+	padding: 0;
+	width: 200px;
+
+}
+
+.column165 .helppanel .helptitle
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding: 0 0 0 10px;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.column165 .helppanel .helplabel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding: 0 0 4px 10px;
+
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+.column165 .helppanel .helpsubtitle
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding: 4px 0 0 10px;
+
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+.column165 .helppanel .helplink a
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0 0 15px 10px;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: blue;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+.column165 .helppanel .helplink a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	text-decoration: underline;
+}
+
+.column165 .helppanel .blockhelppanel
+{
+	/* Non-Overridable Attributes */
+	border-color: none;
+	border-style: none;
+	border-width: 0;
+	display: block;
+	margin-bottom: 20px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.column165 .helppanel .legendpanel
+{
+	/* Non-Overridable Attributes */
+	border-color: transparent;
+	border-style: none;
+	border-width: 0;
+	padding: 0 5px 10px 10px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.column165 .legendpanel .legendtitle
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding: 0 0 6px 0px;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.column165 .legendpanel .iconcontextpanel
+{
+	/* Non-Overridable Attributes */
+	padding: 4px 0px 6px 0px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.column165 .legendpanel .legendlabel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.legendpanel .imgcallout
+{
+    /* Non-Overridable Attributes */	
+    border: 0;
+    display: block;
+    height: 16px;
+    padding: 1px 22px 2px 0;
+    width: 16px;
+	
+    /* Overridable Attributes */
+    /* None */
+}
+
+html>body .legendpanel .imgcallout
+{
+    padding: 1px 2px 2px 0;
+}/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+.mainsection .searchresults
+{
+	/* Non-Overridable Attributes */
+	padding-bottom:15px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .myjobpage .statuspanel
+{
+	/* Non-Overridable Attributes */
+	border-style: none;
+	border-width: 0;
+	display: block;
+	margin: 0 0 1px 0;
+	padding: 4px 8px 4px 8px;
+	text-align:left;
+
+	/* Overridable Attributes */
+	background-color: #F7F7F7;
+}
+
+.mainsection .myjobpage .messagenotepanel
+{
+	/* Non-Overridable Attributes */
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	margin: 6px 0 16px 0;
+	padding: 6px 8px 6px 8px;
+
+	/* Overridable Attributes */
+	background-color: #FAF1D1;
+}
+
+/* From main.css - .mainsection .text */
+.mainsection .searchresults .text,
+.mainsection .myjobpage .text
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .myjobpage .messagenotepanel .text
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .myjobpage .descriptionpanel .text
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	padding: 0;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+/* From main.css - .mainsection .label */
+.mainsection .searchresults .label,
+.mainsection .myjobpage .label
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .searchresults .resultstitlepanel .label
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .searchresults .listingperpagepanel .label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-left: 10px;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .myjobpage .listingperpagepanel .label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-left:0;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .searchresults .sortbypanel .label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-left: 10px;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .myjobpage .sortbypanel .label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-left: 0;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+/* From main.css - .mainsection .descriptionpanel */
+.mainsection .myjobpage .descriptionpanel
+{
+	/* Non-Overridable Attributes*/
+	display: block;
+	margin: 10px 0 15px 0;
+	padding: 0;
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .searchresults .resultstitlepanel
+{
+	/* Non-Overridable Attributes */
+	margin: 0 0 10px 10px;
+	padding: 0;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .myjobpage .resultstitlepanel
+{
+	/* Non-Overridable Attributes */
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css - .mainsection .subtitle */
+.mainsection .searchresults .resultstitlepanel .subtitle,
+.mainsection .myjobpage .resultstitlepanel .subtitle
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes*/
+	/* None */
+}
+
+.mainsection .searchresults .resultstitlepanel .subtitle
+{
+	/* Non-Overridable Attributes */
+	margin: 10px 0 0 0;
+	padding-bottom: 10px;
+
+	/* Overridable Attributes*/
+	/* Previously Defined */
+}
+
+.mainsection .myjobpage .resultstitlepanel .subtitle
+{
+	/* Non-Overridable Attributes */
+	margin: 0;
+	padding-bottom: 6px;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .separatorpanel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0 0 0 0;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css - .mainsection .inputselect */
+.mainsection .searchresults .sortbypanel .inputselect,
+.mainsection .listingperpagepanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .listingperpagepanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-bottom: 2px;
+	margin-left: 4px;
+	vertical-align: middle;
+	width: auto;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .searchresults .sortbypanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	vertical-align: middle;
+	width: auto;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .myjobpage .sortbypanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-bottom: 2px;
+	margin-left: 0;
+	vertical-align: middle;
+	width: auto;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+
+.mainsection .searchresults .listingperpagepanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	vertical-align: middle;
+	width: auto;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+.mainsection .myjobpage .listingperpagepanel .inputselect
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-bottom: 2px;
+	margin-left: 0;
+	vertical-align: middle;
+	width: auto;
+
+	/* Overridable Attributes */
+	/* Previously Defined */
+}
+
+
+.mainsection .pagerpanel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 20px 0 20px 0;
+	padding: 0;
+	text-align: center;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .pagerpanel .pagersectionpanel
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+
+ 	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .pagerpanel .pagersectionpanel .pagerlabel
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-right: 4px;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .pagerpanel .pagersectionpanel .pagerlinkoff a
+{
+	/* Non-Overridable Attributes */
+	cursor: default;
+	display: inline;
+
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/* From list.css - .mainsection .pagerpanel .pagersectionpanel .pagerlinkoff a */
+.mainsection .pagerpanel .pagersectionpanel .pagerlinkoff a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css - .mainsection .separator */
+.mainsection .pagerpanel .pagersectionpanel .separator
+{
+	/* Non-Overridable Attributes */
+	margin: 0;
+	margin-left: 4px;
+    margin-right: 4px;
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .pagerpanel .pagersectionpanel .pagerlinkselected a
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	cursor: default;
+	font-size: 12px;
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* From main.css - .mainsection .pagerpanel .pagersectionpanel .pagerlinkselected a */
+.mainsection .pagerpanel .pagersectionpanel .pagerlinkselected a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .pagerpanel .pagersectionpanel .pagerlink a
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;
+
+	/* Overridable Attributes */
+	color: blue;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* From main.css - .mainsection .pagerpanel .pagersectionpanel .pagerlink a */
+.mainsection .pagerpanel .pagersectionpanel .pagerlink a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+
+	/* Non-Overridable Attributes */
+	text-decoration: underline;
+}
+
+/* From main.css - .mainsection .column165 */
+.mainsection .searchresults .column165
+{
+	/* Non-Overridable Attributes */
+    padding-right: 20px;
+
+	/* Overridable Attributes */
+	/* None */
+}
+
+.languageSelectInterface{
+	/* Non-Overridable Attributes */
+	float : right;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.languageSelectInterface .inputselect {
+    width: auto;
+}
+/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+.mainsection .jobtitlepanel
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .jobcontentpanel
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .titlelink a
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;	
+
+	/* Overridable Attributes */
+	color: blue;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.mainsection .titlelink a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	text-decoration: underline;
+}
+
+
+
+.mainsection .titlelinkoff
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0 6px 0 0;	
+
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* From main.css */
+.mainsection .calloutimg
+{
+	/* Non-Overridable Attributes */
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-right: 18px;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+
+
+.calloutTopImg
+{
+	background: url('../images/balloon_top.gif');
+	background-repeat: no-repeat;
+	height: 14px;                                                         
+	margin-bottom: 0px;
+}
+
+.calloutMiddleImg
+{
+	background: url('../images/balloon_middle.gif');
+	background-repeat: repeat-y;
+	background-position: bottom left;
+	position: static;
+	padding-top: 0px;
+	padding-left: 7px;
+	padding-right: 7px;
+	display: block;
+}
+
+.calloutBottomImg
+{
+	background: url('../images/balloon_bottom.gif');
+	background-repeat: no-repeat;
+	height: 21px;                                                         
+}
+			
+.calloutTipBottomImg
+{
+	background: url('../images/balloonTipBottom.gif');
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: absolute;
+	width: 20px;                                                         
+	height: 27px;                                                         
+	left: 27px;                                                         
+}
+
+.calloutTipTopImg
+{
+	background: url('../images/balloonTipTop.gif');
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: relative;
+	width: 20px;                                                         
+	height: 27px;                                                         
+	left: 27px;                                                         
+	top: 2px;                                                         
+}
+
+.mainsection .inlinepanel
+{
+	display: inline;
+}
+
+.mainsection .blockpanel
+{
+	display: block;
+}
+
+.mainsection .jobtype
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0 0 0 0px;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .jobreferral
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: #008000;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.mainsection .liconnectionswidget
+{
+	margin: 10px 0 0 0;
+}
+
+.mainsection .jobposted
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .jobpostedinline
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .morelocation
+{
+	/* Non-Overridable Attribute */
+	display: inline;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .morelocation .text
+{
+	/* Non-Overridable Attribute */
+	display: inline;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .morelocation .text a
+{
+	/* Non-Overridable Attribute */
+	font-size: 1.0em;
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .morelocation .text a:hover
+{
+	/* Non-Overridable Attribute */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css */
+.mainsection .text
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css */
+.mainsection .jobcontentpanel .metalink2 a
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+/* From main.css */
+.mainsection .jobcontentpanel .metalink2 a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	/* None */
+}
+
+.mainsection .textlink a
+{
+	/* Non-Overridable Attributes */	
+	display: inline;
+	margin: 0 0 0 4px;
+	padding: 0;
+
+	/* Overridable Attributes */	
+	color: blue;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}	
+
+.mainsection .textlink a:hover
+{
+	/* Non-Overridable Attributes */
+	/* None */
+	
+	/* Overridable Attributes */
+	text-decoration: underline;	
+}
+
+.mainsection .editablesection .text
+{
+	display: inline;
+}
+
+.mainsection .editablesection .subtitle
+{
+	display: inline;
+}
+
+.mainsection .editablesection .jobposted
+{
+	display: inline;
+}
+
+.mainsection .editablesection .jobreferral
+{
+	display: inline;
+}
+
+.mainsection .editablesection .contentlinepanel
+{
+	display: block;
+}
+
+.mainsection .editablesection .blockpanel
+{
+	display: block;
+}
+
+.callout .tablelist
+{
+	/* Non-Overridable Attributes */
+	border: 0;
+	display: block;
+	font-size: 1.0em; /* Fix css hierarchy in <table> in IE problem */
+	margin-left: 4px;
+	z-index: 2000;
+	position: relative;
+	
+    /*added by blake for tt101111 at 2007-09-26*/
+    word-wrap: break-word;
+	overflow: hidden;     /* for firefox*/
+	/* Overridable Attributes */
+	/* None */
+}
+
+.callout .title
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-left: 4px;
+	margin-bottom: 6px;
+	z-index: 3000;
+	position: relative;
+	
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.callout .label
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	z-index: 3001;
+	position: relative;
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.callout .value
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-left: 4px;
+	z-index: 3002;
+	position: relative;
+	/* Overridable Attributes */
+	color: #000000;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.callout .textnote
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	display: inline\9;
+	margin-top: 6px;
+	margin-left: 4px;
+	width : 260px;
+	z-index: 3003;
+	position: relative;
+	
+	/* Overridable Attributes */
+	color: #000000;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.callout .titlelinkoff
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0 6px 0 0;	
+	margin-left: 4px;
+	z-index: 3004;
+	position: relative;
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.callout .jobtype
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0 0 0 0px;
+	padding: 0;
+	z-index: 3005;
+	position: relative;
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.mainsection .requisitionDescription .tablelist
+{
+	width: 100%;	
+}
+
+.mainsection .requisitionDescription .columnfull
+{
+	/* Non-Overridable Attributes */
+	padding-right: 10px;
+	vertical-align: top;
+	width: 98%;
+
+	/* Overridable Attributes */
+	/* None */	
+}
+
+.callout .jobreferral
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: #008000;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.callout .jobposted
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.callout .jobpostedinline
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: #575757;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.callout .text
+{
+	display: inline;
+	margin: 0;
+	padding: 0 6px 0 0;	
+	color: black;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+.mainsection .jobupdated
+	{
+	float: right;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #e2b32d;
+	display: block;
+	margin-right: 10px;
+	padding: 0;
+	}	
+/********************************************************************************************
+ *                                  IMPORTANT NOTICE                                        *
+ * ---------------------------------------------------------------------------------------- *
+ * If a value is modified in this document under a "Overridable Attributes" section,        *
+ * the SQL sourcing script must be updated with the same modifications.                     *
+ * Be sure that there is no problem for Customization.                                      *
+ ********************************************************************************************/
+
+/*Ok*/ 
+.message-title
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0 0 0 0px;
+	padding: 0 0 8px 0;
+	
+	/* Overridable Attributes */
+	color: black;	
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*Ok*/ 
+.error-label
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding-bottom: 10px;
+		
+	/* Overridable Attributes */
+	/*None*/
+	
+}
+
+/*Ok*/
+.message-text
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+	/* Overridable Attributes */
+	color: black;	
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+	
+/*Ok*/
+.message-warning
+{
+	/* Non-Overridable Attributes */
+	background: none;
+	border: solid 1px #fbb033;
+	display: block;
+	margin: 12px;
+	padding: 15px;
+	
+	/* Overridable Attributes */
+	background-color: #fff8e5;
+}
+	
+/*Ok*/
+.message-error
+{
+	/* Non-Overridable Attributes */
+	background: none;
+	border: solid 1px #ed1849;
+	display: block;
+	margin: 12px;
+	padding: 15px;
+	
+	/* Overridable Attributes */
+	background-color: #fef2ee;
+}
+	
+/*Ok*/
+.message-notification
+{
+	/* Non-Overridable Attributes */
+	background: none;
+	border: solid 1px #939598;
+	display: block;
+	margin: 12px;
+	padding: 15px;
+	
+	/* Overridable Attributes */
+	background-color: #f1f1f2;
+}
+
+/*Ok*/
+.dialog-columns
+{
+	/* Non-Overridable Attributes */
+	padding: 15px 125px 0 125px;
+	width: 250px;
+	
+	/* Overridable Attributes */
+	/* None */	
+}
+	
+/***** External Message *****/
+
+/*Ok*/
+.messagecontentpanel
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	padding: 20px;
+	overflow: auto;
+	
+	/* Overridable Attributes */
+	background-color: transparent;
+}
+
+/*Ok*/
+.messagetitle
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin-bottom: 15px;
+	
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*Ok*/
+.messagetext
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 0;
+	
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*Ok*/
+.messagecontentpanel .text
+{
+	/* Non-Overridable Attributes */
+	display: block;
+	margin: 16px;
+	
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*Ok*/
+.messagecontentpanel .inputtext300
+{
+	/* Non-Overridable Attributes */
+	display: inline;
+	margin-left: 16px;
+	width: 300px;
+	
+	/* Overridable Attributes */
+	color: black;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;	
+}
+
+/*Ok*/
+.messagenotepanel
+{
+	/* Non-Overridable Attributes */
+	border: solid 1px #939598;
+	display: block;
+	margin: 0;
+	padding: 15px;
+	
+	/* Overridable Attributes */
+	background-color: #f1f1f2;	
+}	
+
+/*Ok*/
+.messagewarningpanel
+{
+	/* Non-Overridable Attributes */
+	border: solid 1px #fbb033;
+	display: block;
+	margin: 0;
+	padding: 15px;
+	
+	/* Overridable Attributes */
+	background-color: #fff8e5;	
+}
+
+/*Ok*/
+.messageerrorpanel
+{
+	/* Non-Overridable Attributes */
+	border: solid 1px #ed1849;
+	display: block;
+	margin: 0;
+	padding: 15px;
+	
+	/* Overridable Attributes */
+	background-color: #fef2ee;	
+}
+
+/***** /External Message *****/

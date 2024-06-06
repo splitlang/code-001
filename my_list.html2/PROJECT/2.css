@@ -1,0 +1,35 @@
+/*googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap')
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: padding top 2rem;
+font-family: "Roboto",sans-serif;
+}
+/*Variables*/
+:root{
+    --main-color:#ff4424;
+    --second-color:#f77214;
+    --text-color:#080a08;
+    --text-alter-color:#868e96;
+    --third-color:#fde628;
+    --bg-color:#fff;
+    --container-color:#faeee4;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding:3rem 0 2rem;
+}
+.container{
+    max: width 1060px;
+    width:100%;
+    margin:auto;
+}

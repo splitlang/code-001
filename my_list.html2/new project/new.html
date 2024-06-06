@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="25.css">
+  <title>SMNIE Motors</title>
+  
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SMNIE Motors</h2>
+            </div>
+            
+
+            <div class="login">
+                <form>
+                    <ul>
+                      <li><a href="contacts.html">CONTACT</a></li>
+                      <!--LINK TO SIGN IN-->
+                    <li><a href="login-bar.html">SIGN IN</a></li>
+                    <li><a href="#">OTHERS</a></li>
+                      <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="search for a car">
+                        <button onclick="searchCar()">Search</button>
+                       
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            
+</head>
+<body>
+  <div id="car-gallery">
+    <!-- Car cards will be dynamically generated here -->
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="honda civic" alt="" id="card-image">
+      <h3>honda</h3>
+      <p>T```jsx
+      <p>Price:Ksh 13,000,000 <span id="card-price"></span></p>
+      <button onclick="hideCardDetails(this)">Close</button>
+    </div>
+
+    <div class="card">
+      <img src="ford mustang" alt="" id="card-image">
+      <h3>ford mustang</h3>
+      <p>Content for card 2.</p>
+      <p>Price:KSh 7,999,999 <span id="card-price"></span></p>
+      <button onclick="hideCardDetails(this)">Close</button>
+    </div>
+
+    <div class="card">
+      <img src="jeep wrangler" alt="" id="card-image">
+      <h3>jeep wrangler</h3>
+      <p>Content for card 3.</p>
+      <p>Price:Ksh.5,900,000 <span id="card-price"></span></p>
+      <button onclick="hideCardDetails(this)">Close</button>
+    </div>
+
+    <div class="card">
+      <img src="Toyota corolla" alt="" id="card-image">
+      <h3>Toyota corolla</h3>
+      <p>Content for card 4.</p>
+      <p>Price: $28,340<span id="card-price"></span></p>
+      <button onclick="hideCardDetails(this)">Close</button>
+    </div>
+  </div>
+
+    <div class="card">
+      <img src="ducati" alt="" id="card-image">
+      <h3>ducati</h3>
+      <p>Content for card 5.</p>
+      <p>Price:KSh 32,200,001 <span id="card-price"></span></p>
+        <button onclick="hideCardDetails(this)">Close</button>
+      </div>
+
+      <div class="card">
+        <img src="yamaha" alt="" id="card-image">
+        <h3>yamaha</h3>
+        <p>Content for card 5.</p>
+        <p>Price:KSh 1,700,000 <span id="card-price"></span></p>
+          <button onclick="hideCardDetails(this)">Close</button>
+        </div>
+
+        <div class="card">
+          <img src="kawasaki" alt="" id="card-image">
+          <h3>kawasaki</h3>
+          <p>Content for card 5.</p>
+          <p>Price: KSh 712,000<span id="card-price"></span></p>
+            <button onclick="hideCardDetails(this)">Close</button>
+          </div>
+
+          <div class="card">
+            <img src="honda" alt="" id="card-image">
+            <h3>honda</h3>
+            <p>Content for card 5.</p>
+            <p>Price:KSh 1,400,000 <span id="card-price"></span></p>
+              <button onclick="hideCardDetails(this)">Close</button>
+            </div>
+
+    </div>
+  </div>
+<script src="25.js"></script>
+
+
+</body>
+</html>

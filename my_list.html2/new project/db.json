@@ -1,0 +1,62 @@
+{
+    "cars": [
+      {
+        "image": "https://example.com/car1.jpg",
+        "name": "Toyota Corolla",
+        "description": "A reliable and fuel-efficient compact car.",
+        "price": "$20,000"
+      },
+      {
+        "image": "https://example.com/car2.jpg",
+        "name": "Honda Civic",
+        "description": "A popular and versatile mid-size sedan.",
+        "price": "$25,000"
+      },
+      {
+        "image": "https://example.com/car3.jpg",
+        "name": "Ford Mustang",
+        "description": "A powerful and iconic muscle car.",
+        "price": "$35,000"
+      },
+      {
+        "image": "https://example.com/car4.jpg",
+        "name": "Jeep Wrangler",
+        "description": "A rugged and off-road-capable SUV.",
+        "price": "$30,000"
+      }
+      
+    ]
+  }
+
+  
+     {   "motorcycles": [
+          {
+            "image": "kawasaki ninja h2r",
+            "name": "Kawasaki Ninja H2R",
+            "description": "A high-performance, supercharged motorcycle with over 300 horsepower.",
+            "price": "$55,000"
+          },
+          {
+            "image": "ducati panigale v4",
+            "name": "Ducati Panigale V4",
+            "description": "A powerful and technologically advanced superbike.",
+            "price": "$27,000"
+          },
+          {
+            "image": "yamaha yzf-r1",
+            "name": "Yamaha YZF-R1",
+            "description": "A track-focused supersport motorcycle with exceptional performance.",
+            "price": "$17,000"
+          },
+          {
+            "image": "honda cbr1000rr-r",
+            "name": "Honda CBR1000RR-R",
+            "description": "A high-end superbike with advanced electronics and a powerful engine.",
+            "price": "$28,000"
+          }
+        ]
+      
+    }
+      
+  
+  

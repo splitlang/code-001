@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "meta-viewport": "off",
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "input-image-alt": "off",
+        "image-alt": "off"
+      }
+    ]
+  }
+}
