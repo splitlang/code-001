@@ -46,4 +46,4 @@ class Magazine:
         authors_with_more_than_two = [author for author, count in author_counts.items() if count > 2]
         if not authors_with_more_than_two:
             return None
-        return authors_with_more_than_two
+        return authors_with_more_than_two     
